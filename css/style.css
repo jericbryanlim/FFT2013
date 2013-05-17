@@ -1,0 +1,550 @@
+/* Web Fonts
+****************************************************************************/
+@font-face {				
+    font-family: 'DINOT-Bold';			
+    src: 	url('/fonts/dinotbold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DINOT-CondMedium';
+    src: 	url('fonts/DINOT-CondMedium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Stag-Bold';
+    src: 	url('fonts/Stag-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Stag-Black';
+    src: 	url('fonts/Stag-Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Stag-Book';
+    src: 	url('fonts/Stag-Book.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Stag-Semibold';
+    src: 	url('fonts/Stag-Semibold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ID Elements
+****************************************************************************/
+/* Navigation */
+#BackColour{
+	position:absolute;
+	left:8;
+	right:8;
+	height:120px;
+	background:#000000;
+}
+#BackColour_SubNavBar{
+	position:absolute;
+	left:8;
+	right:8;
+	height:120px;
+	background:#DD523C;
+        top: 120px;
+        text-transform:uppercase;
+}
+#Logo{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:138px;
+        height:61px;
+        background:url('../images/fft-logo.png') no-repeat;
+        margin-top:30px;
+}
+#NavBar_Main{
+        position:absolute;
+        display:block;
+        height:25px;
+        margin-top:55px;
+        font-family:Stag-Bold;
+        font-size:14px;
+        top:550px;
+}
+#NavBar_Branch{
+        position:absolute;
+        display:block;
+        height:25px;
+        margin-top:55px;
+        font-family:Stag-Bold;
+        font-size:14px
+}
+#SubNavBar{
+        position:absolute;
+        display:block;
+        height:25px;
+        margin-top:55px;
+        font-family:Stag-Book;
+        font-size:12px
+}
+/* Top Banner */
+#TopBanner{
+        position:absolute;
+        display:block;
+        font-family:Stag-Bold;
+        font-size:56px;
+        top:700px;
+        color:#000000;     
+        margin-top:65px;
+        margin-bottom:65px;
+        text-transform:uppercase;
+        left:138px;
+}
+/* Restaurants */
+#Header{
+    position:absolute;
+    display:block;
+    font-family:Stag-Bold;
+    font-size:25px;
+    color:#000000;     
+    margin-top:65px;
+    text-transform:uppercase;
+    left:138px;
+}
+#Resto{
+    position:absolute;
+    display:block;
+    font-family:Stag-Bold;
+    font-size:16px;
+    top:1125px;
+    color:#000000;     
+    margin-top:65px;
+    text-transform:uppercase;
+}
+#RestoWrapper{
+	position:absolute;
+	top:1225px;
+	right:8;
+	height:575px;
+  width:340px;
+	background:#000000;
+}
+#RestoImg{
+        position:absolute;
+        display:block;
+        width:340px;
+        height:165px;
+        background-size: 100% 100%;
+}
+#RestoHeader{
+        position:absolute;
+        display:block;
+        width:340px;
+        height:165px;
+        font-family:Stag-Bold;
+        font-size:25px;
+        left: 20px;
+        top:110px;
+        color:#FFFFFF;     
+        margin-top:65px;
+}
+#RestoBody{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;
+        font-family:Stag-Book;
+        font-size:13px;
+        left: 20px;
+        top:150px;
+        color:#FFFFFF;     
+        margin-top:65px;
+}
+#RestoHours{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;
+        font-family:Stag-Bold;
+        font-size:13px;
+        left: 20px;
+        top:300px;
+        color:#FFFFFF;     
+        margin-top:65px;
+}
+#RestoHoursDetails{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;
+        font-family:Stag-Book;
+        font-size:13px;
+        left: 20px;
+        top:320px;
+        color:#FFFFFF;     
+        margin-top:65px;
+}
+#ReadMore{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;
+        font-family:Stag-Book;
+        font-size:13px;
+        left: 260px;
+        top:450px;
+        color:#FFFFFF;     
+        margin-top:65px;       
+}
+#ReadMoreImg{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;
+        font-family:Stag-Book;
+        font-size:13px;
+        left: 235px;
+        top:443px;
+        color:#FFFFFF;     
+        margin-top:68px;
+        background:url('../images/ReadMore.png') no-repeat;
+        background-size: 10% 15%;      
+}
+#Menu{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;
+        font-family:Stag-Book;
+        font-size:13px;
+        left: 50px;
+        top:450px;
+        color:#FFFFFF;     
+        margin-top:68px;    
+}
+#MenuImg{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;
+        font-family:Stag-Book;
+        font-size:13px;
+        left: 20px;
+        top:445px;
+        color:#FFFFFF;     
+        margin-top:68px;
+        background:url('../images/Menu.png') no-repeat;
+        background-size: 10% 15%;      
+}
+/* Causes*/
+#CausesWrapper{
+	position:absolute;
+	right:8;
+	height:350px;
+        width:200px;
+	background:#000000;
+}
+#causesubheader{
+        position:absolute;
+        display:block;
+        width:120px;
+        height:165px;
+        font-family:Stag-Bold;
+        font-size:32.5px;
+        left: 20px;
+        color:#FFFFFF;     
+        margin-top:65px;
+        text-transform:uppercase;
+}
+#causebody{
+        position:absolute;
+        display:block;
+        width:155px;
+        height:165px;
+        font-family:Stag-Semibold;
+        font-size:16px;
+        left: 20px;
+        color:#FFFFFF;     
+        margin-top:190px;
+        text-transform:uppercase;
+}
+/* Events Scroll */
+#eventdate{
+        position:absolute;
+        display:block;
+        width:155px;
+        height:165px;
+        font-family:Stag-Book;
+        font-size:12px;
+        color:#000000;     
+        margin-top:2375px;
+        text-transform:uppercase;
+
+}
+#eventpic{
+        position:absolute;
+        display:block;
+        width:480px;
+        height:420px;
+        background-size: 100% 100%;
+        margin-top:50px;
+}
+#eventtitle{
+        position:absolute;
+        display:block;
+        width:225px;
+        height:165px;
+        font-family:Stag-Bold;
+        font-size:16px;
+        color:#000000;     
+        margin-top:10px;
+        text-transform:uppercase;
+}
+#eventthumb{
+        position:absolute;
+        display:block;
+        width:220px;
+        height:168px;
+        margin-top:50px;      
+}
+/* Branches */
+#IntroHeader{
+        left:970px;
+        position:absolute;
+        display:block;
+        width:215px;
+        height:165px;
+        margin-top:200px;
+        font-family:Stag-Bold;
+        font-size:21px;
+        color:#000000;     
+        text-transform:uppercase;
+}
+#IntroHour{
+        left:970px;
+        position:absolute;
+        display:block;
+        width:215px;
+        height:165px;
+        margin-top:280px;
+        font-family:Stag-Bold;
+        font-size:13px;
+        color:#000000;     
+}
+#IntroDetails{
+        left:970px;
+        position:absolute;
+        display:block;
+        width:215px;
+        height:165px;
+        margin-top:300px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+}
+#IntroIMG{
+        left:100px;
+        position:absolute;
+        display:block;
+        width:990px;
+        height:620px;
+        margin-top:500px;
+        background:url('../images/SBGIMG/SBGIMG.png') no-repeat;
+}
+/* SBG */
+#SBGLogo{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:215px;
+        height:165px;
+        background:url('../images/basket.png') no-repeat;
+        margin-top:200px;
+}
+#SBGMotto{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:250px;
+        height:115px;
+        background:url('../images/SBGmotto.png') no-repeat;
+        margin-top:380px;
+}
+/* Others */
+#hr {
+    position:absolute;
+    display:block;
+    font-family:Stag-Bold;
+    font-size:25px;
+    color:#000000;     
+    text-transform:uppercase;
+    left:138px;
+    margin-top:65px;
+}
+#hr_short {
+    position:absolute;
+    display:block;
+    font-family:Stag-Bold;
+    font-size:25px;
+    top:1120px;
+    color:#000000;     
+    margin-top:65px;
+    text-transform:uppercase;
+}
+#hr_subevent {
+    position:absolute;
+    display:block;
+    font-family:Stag-Bold;
+    font-size:25px;
+    color:#000000;     
+    margin-top:10px;
+    text-transform:uppercase;
+}
+#Slides {
+    display: none;
+    width: 90%;
+    margin-top: 15px;
+    position: relative;
+}
+A.slidesjs-previous{
+	display:block;
+	width:31px;
+	height:31px;
+	background:url('../images/buttonset.png') no-repeat;
+	background-position:0 0;
+	position:absolute;
+	left:0px;
+	top:50%;
+	z-index:9999;
+}
+A.slidesjs-next{
+	display:none;
+	width:31px;
+	height:31px;
+	background:url('../images/buttonset.png') no-repeat;
+	background-position:-30 0;
+	position:absolute;
+	right:0px;
+	top:50%;
+	z-index:9999;
+}
+/* Class Elements
+****************************************************************************/
+.BackColour_Main{
+    top:550px;
+}
+.BackColour_Branches{
+    top:0px;
+}
+.NavBarCol1{
+    left:600px;
+    cursor:pointer;
+}
+.NavBarCol2{
+    left:820px;
+    cursor:pointer;
+}
+.NavBarCol3{
+    left:970px;
+    cursor:pointer;
+}
+.NavBarCol4{
+    left:1150px;
+    cursor:pointer;
+}
+.SBG{
+    left:138px;
+}
+.NMS{
+    left:500px;
+}
+.FFFT{
+    left:880px;
+}
+.restoheader{
+    top:1050px;
+}
+.restohr{
+    top:1060px;
+}
+.SBGIMG{
+    background:url('../images/SBG.png') no-repeat;
+}
+.FFFTIMG{
+    background:url('../images/8Q.png') no-repeat;
+}
+.whatsonheader{
+    top:1800px;
+}
+.whatsonhr{
+    top:1810px;
+}
+.whatsonslide{
+    top:1850px;
+}
+.causesheader{
+    top:2450px;
+}
+.causeshr{
+    top:2460px;
+}
+.First{
+    left:138px;
+    top:2580px;
+}
+.Gap{
+    left:220px;
+}
+.eventsheader{
+    top:2900px;
+    
+}
+.eventshr{
+    top:2910px;
+}
+.eventsbig{
+    left:138px;
+}
+.eventsthumbcol1{
+    left:700px;
+}
+.eventsthumbcol2{
+    left:980px;
+}
+.eventsthumbcol3{
+    left:700px;
+    top:915px;
+}
+.eventsthumbcol4{
+    left:980px;
+    top:915px;
+}
+.eventsbigIMG{
+    background:url('../images/Events/Event1.png') no-repeat;
+}
+.event2{
+    background:url('../images/Events/Event2.png') no-repeat;
+}
+.event3{
+    background:url('../images/Events/Event3.png') no-repeat;
+}
+.event4{
+    background:url('../images/Events/Event4.png') no-repeat;
+}
+.event5{
+    background:url('../images/Events/Event5.png') no-repeat;
+}
+/* HTML Elements
+****************************************************************************/
+BODY{
+	background-color: #FFFFFF;
+	color:#FFFFFF;
+}
+A, A:link, A:visited{
+	color:#FFFFFF;
+	text-decoration:none;
+}
