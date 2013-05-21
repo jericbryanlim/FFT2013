@@ -32,7 +32,8 @@
     <div id="MenuImg"></div>
     <div id="Menu"><u>View Menu</u></div>
     <div id="ReadMoreImg"></div>
-    <div id="ReadMore"><u><a href="pages/sbg.php">Read More</a></u></div>
+    <div id="ReadMore"></div>
+    <div id="ReadMore"><a href="pages/branches.php?name=SBG"><u>Read More</u></a></div>
 </div>
 <!-- Second Column-->
 <div id="RestoWrapper" class="NMS">
@@ -61,7 +62,8 @@
     <div id="MenuImg"></div>
     <div id="Menu"><u>View Menu</u></div>
     <div id="ReadMoreImg"></div>
-    <div id="ReadMore"><u>Read More</u></div>
+        <div id="ReadMore"><a href="pages/branches.php?name=NMS"><u>Read More</u></a></div>
+    </div>
 </div>
 <!-- Third Column-->
 <div id="RestoWrapper" class="FFFT">
@@ -94,5 +96,6 @@
     <div id="MenuImg"></div>
     <div id="Menu"><u>View Menu</u></div>
     <div id="ReadMoreImg"></div>
-    <div id="ReadMore"><u>Read More</u></div>
+        <div id="ReadMore"><a href="pages/branches.php?name=FFFT"><u>Read More</u></a></div>
+    </div>
 </div>

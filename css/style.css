@@ -36,7 +36,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Stag-Light';
+    src: 	url('fonts/Stag-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 /* ID Elements
 ****************************************************************************/
 /* Navigation */
@@ -55,6 +60,40 @@
 	background:#DD523C;
         top: 120px;
         text-transform:uppercase;
+}
+#BackColour_Picnic{
+	position:absolute;
+	left:138;
+	right:125;
+	height: 45px;
+	background:#000000;         
+}
+.picnic2{
+        top: 6550px;
+}
+.picnic4{
+        top: 6620px;
+}
+.picniccust{
+        top: 6690px;
+}
+#picnictext{
+        position:absolute;
+	left:150;
+	right:125;
+        text-transform:uppercase;
+        font-family:Stag-Light;
+        font-size:22px;
+            
+}
+.picnictext2{
+        top: 6560px;
+}
+.picnictext4{
+        top: 6630px;
+}
+.picnictextcust{
+        top: 6700px;
 }
 #Logo{
         left:138px;
@@ -194,7 +233,7 @@
         height:165px;
         font-family:Stag-Book;
         font-size:13px;
-        left: 260px;
+        left: 255px;
         top:450px;
         color:#FFFFFF;     
         margin-top:65px;       
@@ -347,13 +386,305 @@
         text-transform:none;
 }
 #IntroIMG{
-        left:100px;
+        left:138px;
         position:absolute;
         display:block;
-        width:990px;
+        width:1050px;
         height:620px;
-        margin-top:500px;
-        background:url('../images/SBGIMG/SBGIMG.png') no-repeat;
+        background-size: 100% 100%;
+}
+#IntroBody{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:1050px;
+        height:620px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+}
+#PicnicNote{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:1050px;
+        height:300px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:6510px;
+}
+#ReserveNote{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:1050px;
+        height:100px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:7050px;
+}
+#choices{
+        
+        position:absolute;
+        display:block;
+        width:1050px;
+        height:100px;
+        font-family:Stag-Bold;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        
+}
+.menucol1{
+    left:138px;
+    margin-top:6615px;
+}
+.menucol2{
+    left:550px;
+    margin-top:6615px;
+}
+.menucol3{
+    left:950px;
+    margin-top:6615px;
+}
+.subchoices{
+        
+        position:absolute;
+        display:block;
+        width:1050px;
+        height:100px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:10px;
+}
+#MAP{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:1080px;
+        height:770px;                
+        background-size: 110% 100%;     
+}
+.SBGmap{
+        background:url('../images/SBG/SBGMap.png') no-repeat;
+        margin-top:3780px;
+}
+.NMSmap{
+        background:url('../images/NMS/NMSMap.png') no-repeat;
+        margin-top:2140px;
+}.FFFTmap{
+        background:url('../images/FFFT/FFFTMap.png') no-repeat;
+        margin-top:2140px;
+}
+#HOWTO{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:1050px;
+        height:620px;      
+        font-family:Stag-Bold;
+        font-size:25px;
+        color:#000000; 
+        text-transform:none;
+}
+.SBGhowto{
+        margin-top:4580px;
+}
+.NMShowto{
+        margin-top:2950px;
+}
+#please{
+        left:1000px;
+        position:absolute;
+        display:block;
+        width:300px;
+        height:620px;
+        margin-top:4580px;
+        font-family:Stag-Book;
+        font-size:16px;
+        color:#000000; 
+        text-transform:none;
+}
+#Bus{
+        position:absolute;
+        display:block;
+        width:197px;
+        height:191px;
+        background:url('../images/bus.png') no-repeat;
+        margin-top:4650px;
+        background-size: 20% 20%;
+}
+#BusNMS{
+        position:absolute;
+        display:block;
+        width:197px;
+        height:191px;
+        background:url('../images/bus.png') no-repeat;
+        margin-top:3000px;
+        background-size: 20% 20%;
+}
+#Car{
+        position:absolute;
+        display:block;
+        width:197px;
+        height:191px;
+        background:url('../images/car.png') no-repeat;
+        margin-top:4650px;
+        background-size: 20% 20%;
+}
+#CarNMS{
+        position:absolute;
+        display:block;
+        width:197px;
+        height:191px;
+        background:url('../images/car.png') no-repeat;
+        margin-top:3000px;
+        background-size: 20% 20%;
+}
+#Taxi{
+        position:absolute;
+        display:block;
+        width:197px;
+        height:191px;
+        background:url('../images/taxi.png') no-repeat;
+        margin-top:4650px;
+        background-size: 20% 20%;
+}
+#TaxiNMS{
+        position:absolute;
+        display:block;
+        width:197px;
+        height:191px;
+        background:url('../images/taxi.png') no-repeat;
+        margin-top:3000px;
+        background-size: 20% 20%;
+}
+#Train{
+        position:absolute;
+        display:block;
+        width:197px;
+        height:191px;
+        background:url('../images/train.png') no-repeat;
+        margin-top:4650px;
+        background-size: 20% 20%;
+}
+#TrainNMS{
+        position:absolute;
+        display:block;
+        width:197px;
+        height:191px;
+        background:url('../images/train.png') no-repeat;
+        margin-top:3000px;
+        background-size: 20% 20%;
+}
+#transdesc{
+        position:absolute;
+        display:block;
+        width:300px;
+        height:620px;
+        margin-top:4660px;
+        font-family:Stag-Bold;
+        font-size:14px;
+        color:#000000; 
+        text-transform:none;
+}
+#transdescNMS{
+        position:absolute;
+        display:block;
+        width:300px;
+        height:620px;
+        margin-top:3010px;
+        font-family:Stag-Bold;
+        font-size:14px;
+        color:#000000; 
+        text-transform:none;
+}
+#transbody{
+        position:absolute;
+        display:block;
+        width:230px;
+        height:620px;
+        margin-top:4690px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+}
+#transbodyNMS{
+        position:absolute;
+        display:block;
+        width:230px;
+        height:620px;
+        margin-top:3040px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+}
+#policy{
+        position:absolute;
+        display:block;
+        width:230px;
+        height:620px;
+        margin-top:4950px;
+        font-family:Stag-Bold;
+        font-size:15px;
+        color:#000000; 
+        text-transform:uppercase;
+        left:138px;
+}
+#policyNMS{
+        position:absolute;
+        display:block;
+        width:230px;
+        height:620px;
+        margin-top:3240px;
+        font-family:Stag-Bold;
+        font-size:15px;
+        color:#000000; 
+        text-transform:uppercase;
+        left:138px;
+}
+#policyheader{
+        position:absolute;
+        display:block;
+        width:230px;
+        height:620px;
+        font-family:Stag-SemiBold;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        left:138px;
+}
+
+#policybody{
+        position:absolute;
+        display:block;
+        width:230px;
+        height:620px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        left:138px;
+}
+#btnstyle {
+        font-family:Stag-Bold;
+        font-size:13px;  
+        color:#FFFFFF; 
+        text-transform:uppercase;
+}
+#readstyle {
+        font-family:Stag-Book;
+        font-size:13px;  
+        color:#FFFFFF; 
 }
 /* SBG */
 #SBGLogo{
@@ -362,7 +693,25 @@
         display:block;
         width:215px;
         height:165px;
-        background:url('../images/basket.png') no-repeat;
+        background:url('../images/SBGlogo.png') no-repeat;
+        margin-top:200px;
+}
+#NMSLogo{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:215px;
+        height:165px;
+        background:url('../images/NMSlogo.png') no-repeat;
+        margin-top:200px;
+}
+#FFFTLogo{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:215px;
+        height:165px;
+        background:url('../images/FFFTlogo.png') no-repeat;
         margin-top:200px;
 }
 #SBGMotto{
@@ -374,6 +723,35 @@
         background:url('../images/SBGmotto.png') no-repeat;
         margin-top:380px;
 }
+#NMSMotto{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:250px;
+        height:115px;
+        background:url('../images/NMSmotto.png') no-repeat;
+        margin-top:380px;
+}
+#FFFTMotto{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:250px;
+        height:115px;
+        background:url('../images/FFFTmotto.png') no-repeat;
+        margin-top:380px;
+}
+#poster{
+        left:138px;
+        position:absolute;
+        display:block;
+        width:1085px;
+        height:803px;
+        background:url('../images/picnic.png') no-repeat;
+        margin-top:5690px;
+        background-size: 110% 100%;
+}
+
 /* Others */
 #hr {
     position:absolute;
@@ -471,6 +849,36 @@ A.slidesjs-next{
 .restohr{
     top:1060px;
 }
+.locationheaderSBG{
+    top:3650px;
+}
+.locationheaderNMS{
+    top:2000px;
+}
+.locationhrNMS{
+    top:2010px;
+}
+.locationhrSBG{
+    top:3660px;
+}
+.reservationheader{
+    top:4800px;
+}
+.reservationheaderNMS{
+    top:3100px;
+}
+.reservationhr{
+    top:4810px;
+}
+.reservationhrNMS{
+    top:3110px;
+}
+.picnicheader{
+    top:5500px;
+}
+.picnichr{
+    top:5510px;
+}
 .SBGIMG{
     background:url('../images/SBG.png') no-repeat;
 }
@@ -538,6 +946,91 @@ A.slidesjs-next{
 .event5{
     background:url('../images/Events/Event5.png') no-repeat;
 }
+.SBGIMG1{
+    background:url('../images/SBG/SBG1.png') no-repeat;
+    margin-top:550px;
+}
+.BlankIMG1{
+    background:url('../images/Blank.png') no-repeat;
+    margin-top:550px;
+}
+.BlankIMG2{
+    background:url('../images/Blank.png') no-repeat;
+    margin-top:1350px;
+}
+.SBGIMG2{
+    background:url('../images/SBG/SBG2.png') no-repeat;
+    margin-top:1190px;
+}
+.SBGIMG3{
+    background:url('../images/SBG/SBG3.png') no-repeat;
+    margin-top:2350px;
+}
+.SBGIMG4{
+    background:url('../images/SBG/SBG4.png') no-repeat;
+    margin-top:3000px;
+}
+.transcol1{
+    left:138px;  
+}
+.transcol2{
+    left:425px;  
+}
+.transcol3{
+    left:715px;  
+}
+.transcol4{
+    left:1005px;  
+}
+.bus2{
+    left:465px;  
+}
+.transdesc1{
+    left:185px;
+}
+.transdesc2{
+    left:510px;
+}
+.transdesc3{
+    left:760px;
+}
+.transdesc4{
+    left:1050px;
+}
+.day{
+    margin-top:4980px;
+}
+.dayNMS{
+    margin-top:3270px;
+}
+.daydetails{
+    margin-top:5000px;
+}
+.daydetailsNMS{
+    margin-top:3290px;
+}
+.email{
+    margin-top:5100px;
+}
+.emailNMS{
+    margin-top:3400px;
+}
+.reply{
+    margin-top:5120px;
+}
+.replyNMS{
+    margin-top:3420px;
+}
+.descSBG{
+    margin-top:1850px;
+}
+.descNMS{
+    margin-top:1220px;
+}
+.picnic{
+    margin-top:5620px;
+}        
+
 /* HTML Elements
 ****************************************************************************/
 BODY{
@@ -547,4 +1040,38 @@ BODY{
 A, A:link, A:visited{
 	color:#FFFFFF;
 	text-decoration:none;
+}
+table{
+        position:absolute;
+        display:block;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        left:138px;
+        text-transform:uppercase;
+        
+}
+
+DL{
+        position:absolute;
+        display:block;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        left:138px;        
+        top: 6750px;
+        border: 1px solid black;
+	margin: 5px;
+}
+LI{
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+}
+#SBG{
+    margin-top:5200px;
+}
+#NMS{
+    margin-top:3500px;
 }
