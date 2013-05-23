@@ -3,19 +3,26 @@
 
 <div id="policy">RESERVATION POLICY</div>
 
-<div id="policyheader" class="day">Monday - Friday</div>
+<div id="policyheader" class="day">Weekdays</div>
 <div id="policybody" class="daydetails">
-    No reservations taken       <br />
-    for lunch between 12pm - 2pm <br /><br />
-    Last reservations taken     <br />
-    for dinner at 7.30pm
+    We Accept Reservations
+    <br><br>
+    <b> Weekends </b>
+    <br>
+    Reservations accepted from 8am - 10am and 3pm - 7.30pm
+    <br>
+    Maximum group size of 12
+    <br><br>
+    <b>Public Holidays</b>
+    <br>
+    No reservations
 </div>
-<div id="policyheader" class="email">Reservations through email</div>
+<!--div id="policyheader" class="email">Reservations through email</div>
 <div id="policybody" class="reply">
             2 weeks in advance
     <br />  (reservations are only confirmed 
     <br />when there is an email reply)
-</div>
+</div-->
 
 
 <!-- reservation form -->

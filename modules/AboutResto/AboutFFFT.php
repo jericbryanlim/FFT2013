@@ -1,6 +1,7 @@
 <div id="FFFTLogo"></div>
+<!--
 <div id="FFFTMotto"></div>
-
+-->
 <div id="IntroHeader"><div id="AboutID">FAST FOOD FOR THOUGHT @ 8 QUEEN STREET</div></div>
 <div id="IntroHour">Operating Hours</div>
 <div id="IntroDetails">

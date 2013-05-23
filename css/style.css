@@ -69,13 +69,13 @@
 	background:#000000;         
 }
 .picnic2{
-        top: 6550px;
+        top: 5350px;
 }
 .picnic4{
-        top: 6620px;
+        top: 5420px;
 }
 .picniccust{
-        top: 6690px;
+        top: 5490px;
 }
 #picnictext{
         position:absolute;
@@ -86,14 +86,15 @@
         font-size:22px;
             
 }
+
 .picnictext2{
-        top: 6560px;
+        top: 5360px;
 }
 .picnictext4{
-        top: 6630px;
+        top: 5430px;
 }
 .picnictextcust{
-        top: 6700px;
+        top: 5500px;
 }
 #Logo{
         left:138px;
@@ -111,7 +112,7 @@
         margin-top:55px;
         font-family:Stag-Bold;
         font-size:14px;
-        top:550px;
+        cursor:pointer;
 }
 #NavBar_Branch{
         position:absolute;
@@ -119,7 +120,8 @@
         height:25px;
         margin-top:55px;
         font-family:Stag-Bold;
-        font-size:14px
+        font-size:14px;
+        cursor:pointer;
 }
 #SubNavBar{
         position:absolute;
@@ -139,8 +141,8 @@
         color:#000000;     
         margin-top:65px;
         margin-bottom:65px;
-        text-transform:uppercase;
         left:138px;
+        width:1000px;
 }
 /* Restaurants */
 #Header{
@@ -170,6 +172,11 @@
 	height:575px;
   width:340px;
 	background:#000000;
+}
+#Social{
+	position:absolute;
+	right:10;
+        top:150px;
 }
 #RestoImg{
         position:absolute;
@@ -404,17 +411,28 @@
         color:#000000; 
         text-transform:none;
 }
+#price{
+        right:0;
+        position:absolute;
+        display:block;
+        width:725px;
+        font-family:Stag-Bold;
+        font-size:20px;
+        color:#000000; 
+        text-transform:none;
+        display:inline;
+}
 #PicnicNote{
         left:138px;
         position:absolute;
         display:block;
         width:1050px;
-        height:300px;
+        height:650px;
         font-family:Stag-Book;
         font-size:13px;
         color:#000000; 
         text-transform:none;
-        margin-top:6510px;
+        margin-top:5300px;
 }
 #ReserveNote{
         left:138px;
@@ -426,7 +444,15 @@
         font-size:13px;
         color:#000000; 
         text-transform:none;
-        margin-top:7050px;
+}
+.two{
+    margin-top:5850px;
+}
+.four{
+    margin-top:5925px;
+}
+.cust{
+    margin-top:6000px;
 }
 #choices{
         
@@ -442,15 +468,39 @@
 }
 .menucol1{
     left:138px;
-    margin-top:6615px;
+    margin-top:5415px;
+}
+.menucol14{
+    left:138px;
+    margin-top:5485px;
+}
+.menucol1cust{
+    left:138px;
+    margin-top: 5555px;
 }
 .menucol2{
     left:550px;
-    margin-top:6615px;
+    margin-top:5415px;
+}
+.menucol24{
+    left:550px;
+    margin-top:5485px;
+}
+.menucol2cust{
+    left:550px;
+    margin-top:5555px;
 }
 .menucol3{
     left:950px;
-    margin-top:6615px;
+    margin-top:5415px;
+}
+.menucol34{
+    left:950px;
+    margin-top:5485px;
+}
+.menucol3cust{
+    left:950px;
+    margin-top:5555px;
 }
 .subchoices{
         
@@ -474,7 +524,7 @@
 }
 .SBGmap{
         background:url('../images/SBG/SBGMap.png') no-repeat;
-        margin-top:3780px;
+        margin-top:2730px;
 }
 .NMSmap{
         background:url('../images/NMS/NMSMap.png') no-repeat;
@@ -495,7 +545,7 @@
         text-transform:none;
 }
 .SBGhowto{
-        margin-top:4580px;
+        margin-top:3530px;
 }
 .NMShowto{
         margin-top:2950px;
@@ -506,7 +556,7 @@
         display:block;
         width:300px;
         height:620px;
-        margin-top:4580px;
+        margin-top:3530px;
         font-family:Stag-Book;
         font-size:16px;
         color:#000000; 
@@ -518,7 +568,7 @@
         width:197px;
         height:191px;
         background:url('../images/bus.png') no-repeat;
-        margin-top:4650px;
+        margin-top:3600px;
         background-size: 20% 20%;
 }
 #BusNMS{
@@ -536,7 +586,7 @@
         width:197px;
         height:191px;
         background:url('../images/car.png') no-repeat;
-        margin-top:4650px;
+        margin-top:3600px;
         background-size: 20% 20%;
 }
 #CarNMS{
@@ -554,7 +604,7 @@
         width:197px;
         height:191px;
         background:url('../images/taxi.png') no-repeat;
-        margin-top:4650px;
+        margin-top:3600px;
         background-size: 20% 20%;
 }
 #TaxiNMS{
@@ -572,7 +622,7 @@
         width:197px;
         height:191px;
         background:url('../images/train.png') no-repeat;
-        margin-top:4650px;
+        margin-top:3600px;
         background-size: 20% 20%;
 }
 #TrainNMS{
@@ -589,7 +639,7 @@
         display:block;
         width:300px;
         height:620px;
-        margin-top:4660px;
+        margin-top:3610px;
         font-family:Stag-Bold;
         font-size:14px;
         color:#000000; 
@@ -609,9 +659,9 @@
 #transbody{
         position:absolute;
         display:block;
-        width:230px;
+        width:237px;
         height:620px;
-        margin-top:4690px;
+        margin-top:3640px;
         font-family:Stag-Book;
         font-size:13px;
         color:#000000; 
@@ -633,7 +683,7 @@
         display:block;
         width:230px;
         height:620px;
-        margin-top:4950px;
+        margin-top:3850px;
         font-family:Stag-Bold;
         font-size:15px;
         color:#000000; 
@@ -667,7 +717,7 @@
 #policybody{
         position:absolute;
         display:block;
-        width:230px;
+        width:400px;
         height:620px;
         font-family:Stag-Book;
         font-size:13px;
@@ -709,8 +759,8 @@
         left:138px;
         position:absolute;
         display:block;
-        width:215px;
-        height:165px;
+        width:200px;
+        height:285px;
         background:url('../images/FFFTlogo.png') no-repeat;
         margin-top:200px;
 }
@@ -748,8 +798,8 @@
         width:1085px;
         height:803px;
         background:url('../images/picnic.png') no-repeat;
-        margin-top:5690px;
-        background-size: 110% 100%;
+        margin-top:4475px;
+        background-size: 100% 100%;
 }
 
 /* Others */
@@ -820,19 +870,55 @@ A.slidesjs-next{
 }
 .NavBarCol1{
     left:600px;
-    cursor:pointer;
+}
+.NavBarCol1_main{
+    left:600px;
+    top:550px;
+    display:inline;
+}
+.NavBarCol1_branch{
+    left:600px;
+    top:0px;
+    display:inline;
 }
 .NavBarCol2{
     left:820px;
-    cursor:pointer;
+}
+.NavBarCol2_main{
+    margin-left:80px;
+    top:550px;
+    display:inline;
+}
+.NavBarCol2_branch{
+    margin-left:80px;
+    top:0px;
+    display:inline;
 }
 .NavBarCol3{
     left:970px;
-    cursor:pointer;
+}
+.NavBarCol3_main{
+    margin-left:70px;
+    top:550px;
+    display:inline;
+}
+.NavBarCol3_branch{
+    margin-left:70px;
+    top:0px;
+    display:inline;
 }
 .NavBarCol4{
     left:1150px;
-    cursor:pointer;
+}
+.NavBarCol4_main{
+    margin-left:90px;
+    top:550px;
+    display:inline;
+}
+.NavBarCol4_branch{
+    margin-left:90px;
+    top:0px;
+    display:inline;
 }
 .SBG{
     left:138px;
@@ -850,7 +936,7 @@ A.slidesjs-next{
     top:1060px;
 }
 .locationheaderSBG{
-    top:3650px;
+    top:2600px;
 }
 .locationheaderNMS{
     top:2000px;
@@ -859,31 +945,34 @@ A.slidesjs-next{
     top:2010px;
 }
 .locationhrSBG{
-    top:3660px;
+    top:2610px;
 }
 .reservationheader{
-    top:4800px;
+    top:3700px;
 }
 .reservationheaderNMS{
     top:3100px;
 }
 .reservationhr{
-    top:4810px;
+    top:3710px;
 }
 .reservationhrNMS{
     top:3110px;
 }
 .picnicheader{
-    top:5500px;
+    top:4350px;
 }
 .picnichr{
-    top:5510px;
+    top:4360px;
 }
 .SBGIMG{
     background:url('../images/SBG.png') no-repeat;
 }
+.NMSIMG{
+    background:url('../images/NMS.png') no-repeat;
+}
 .FFFTIMG{
-    background:url('../images/8Q.png') no-repeat;
+    background:url('../images/FFFT.png') no-repeat;
 }
 .whatsonheader{
     top:1800px;
@@ -952,7 +1041,7 @@ A.slidesjs-next{
 }
 .BlankIMG1{
     background:url('../images/Blank.png') no-repeat;
-    margin-top:550px;
+    margin-top:700px;
 }
 .BlankIMG2{
     background:url('../images/Blank.png') no-repeat;
@@ -964,7 +1053,7 @@ A.slidesjs-next{
 }
 .SBGIMG3{
     background:url('../images/SBG/SBG3.png') no-repeat;
-    margin-top:2350px;
+    margin-top:2000px;
 }
 .SBGIMG4{
     background:url('../images/SBG/SBG4.png') no-repeat;
@@ -983,13 +1072,16 @@ A.slidesjs-next{
     left:1005px;  
 }
 .bus2{
-    left:465px;  
+    left:180px;  
 }
 .transdesc1{
     left:185px;
 }
+.transdescSBG{
+    left:225px;
+}
 .transdesc2{
-    left:510px;
+    left:470px;
 }
 .transdesc3{
     left:760px;
@@ -998,13 +1090,13 @@ A.slidesjs-next{
     left:1050px;
 }
 .day{
-    margin-top:4980px;
+    margin-top:3880px;
 }
 .dayNMS{
     margin-top:3270px;
 }
 .daydetails{
-    margin-top:5000px;
+    margin-top:3900px;
 }
 .daydetailsNMS{
     margin-top:3290px;
@@ -1025,7 +1117,7 @@ A.slidesjs-next{
     margin-top:1850px;
 }
 .descNMS{
-    margin-top:1220px;
+    margin-top:550px;
 }
 .picnic{
     margin-top:5620px;
@@ -1070,8 +1162,18 @@ LI{
         text-transform:none;
 }
 #SBG{
-    margin-top:5200px;
+    margin-top:4050px;
 }
 #NMS{
-    margin-top:3500px;
+    margin-top:3450px;
+}
+.stick {
+    position: fixed;
+    top: 0;
+    z-index:9999;
+}
+.stick2 {
+    position: fixed;
+    top: 10px;
+    z-index:9999;
 }

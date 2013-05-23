@@ -37,7 +37,7 @@
 </div>
 <!-- Second Column-->
 <div id="RestoWrapper" class="NMS">
-    <div id="RestoImg"></div>
+    <div id="RestoImg" class="NMSIMG"></div>
     <div id="RestoHeader">Share The Good Times</div>
     <div id="RestoBody">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.

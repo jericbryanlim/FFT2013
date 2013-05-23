@@ -3,20 +3,27 @@
 
 <div id="policyNMS">RESERVATION POLICY</div>
 
-<div id="policyheader" class="dayNMS">Monday - Friday</div>
+<div id="policyheader" class="dayNMS">Weekdays</div>
 <div id="policybody" class="daydetailsNMS">
-    No reservations taken       <br />
-    for lunch between 12pm - 2pm <br /><br />
-    Last reservations taken     <br />
-    for dinner at 7.30pm
+    We accept reservations
+    <br><br>
+    <b>Weekends</b>
+    <br>
+    Reservations accepted from 8am - 10am and 3pm - 7.30pm<br>
+    Maximum group size of 12
+    <br><br>
+    <b>Public Holidays</b>
+    <br>
+    No reservations
 </div>
+<!--
 <div id="policyheader" class="emailNMS">Reservations through email</div>
 <div id="policybody" class="replyNMS">
             2 weeks in advance
     <br />  (reservations are only confirmed 
     <br />when there is an email reply)
 </div>
-
+-->
 
 <!-- reservation form -->
 

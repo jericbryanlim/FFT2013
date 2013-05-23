@@ -16,6 +16,5 @@ include_once('../modules/SubNavigationBar/SubNavigationBar.php');
      elseif($branch == 'FFFT'){
         include_once('../modules/AboutResto/AboutFFFT.php');
         include_once('../modules/Location/LocationFFFT.php');
-        include_once('../modules/Reservations/ReservationsNMS.php');
      }
 ?>

@@ -20,17 +20,16 @@
     (Community Programmes)                      <br />
 </div>
 
-<div id="IntroIMG" class="BlankIMG1"></div>
-
 <div id="IntroBody" class="descNMS">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at 
-    vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at 
-    vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    Opened on 25 May 2013, Food For Thought at the National Museum of Singapore is all about inspiring Singaporeans to come together and Share The Good Times.
+    <br>
+    Our food represents modern Singapore: bold Southeast Asian flavour profiles layered with globalised influence. Expect playful new takes on familiar flavours like our Croque Mah Ling, Not-So-Little Gems profiteroles and chwee kueh inspired Brown Buttered Chye Poh Prawn Salad.
+    <br>
+    Our restaurant design makes references to the museum’s context, honouring our past yet looking forward to our future. The round marble table tops and wall mosaics remind us of the home dining tables and kopitiams we grew up with, but updated in contemporary style. 
+    <br>
+    Throughout the year, we will run a curated series of unique dining experiences themed around national issues. By creating possibilities for open conversations about where Singapore came from, where she is now and where she wants to go, we hope to serve up some real food for thought along with your meal.
 </div>
 
+
+<div id="IntroIMG" class="BlankIMG1"></div>
 <div id="IntroIMG" class="BlankIMG2"></div>
