@@ -22,14 +22,16 @@
 
 <div id="IntroBody" class="descNMS">
     Opened on 25 May 2013, Food For Thought at the National Museum of Singapore is all about inspiring Singaporeans to come together and Share The Good Times.
-    <br>
+    <br><br>
     Our food represents modern Singapore: bold Southeast Asian flavour profiles layered with globalised influence. Expect playful new takes on familiar flavours like our Croque Mah Ling, Not-So-Little Gems profiteroles and chwee kueh inspired Brown Buttered Chye Poh Prawn Salad.
-    <br>
-    Our restaurant design makes references to the museum’s context, honouring our past yet looking forward to our future. The round marble table tops and wall mosaics remind us of the home dining tables and kopitiams we grew up with, but updated in contemporary style. 
-    <br>
+    <br><br>
+    Our restaurant design makes references to the museum's context, honouring our past yet looking forward to our future. The round marble table tops and wall mosaics remind us of the home dining tables and kopitiams we grew up with, but updated in contemporary style. 
+    <br><br>
     Throughout the year, we will run a curated series of unique dining experiences themed around national issues. By creating possibilities for open conversations about where Singapore came from, where she is now and where she wants to go, we hope to serve up some real food for thought along with your meal.
 </div>
 
 
-<div id="IntroIMG" class="BlankIMG1"></div>
+<div id="IntroIMG" class="NMSIMG1"></div>
+<!--
 <div id="IntroIMG" class="BlankIMG2"></div>
+-->

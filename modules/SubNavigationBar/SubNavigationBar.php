@@ -3,7 +3,6 @@
 ?>
 
     <div id="BackColour_SubNavBar">     
-        
     <div id="SubNavBar" class="NavBarCol1"><a href="#AboutID">
             <?php
               if($branch == 'SBG')  

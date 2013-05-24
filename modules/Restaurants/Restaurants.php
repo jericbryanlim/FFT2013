@@ -12,7 +12,8 @@
     <div id="RestoImg" class="SBGIMG"></div>
     <div id="RestoHeader">Taste The Good Life</div>
     <div id="RestoBody">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Based within Singapore's most historical 
+        <br>garden park, this Food For Thought celebrates family, rest and sustainable living.
         <br />
         <br />
         1 Cluny Road, Singapore Botanic Gardens, 
@@ -29,8 +30,9 @@
         <br />
         (Last orders at 8.30pm)
     </div>
+    <div id='menuSBG'>
     <div id="MenuImg"></div>
-    <div id="Menu"><u>View Menu</u></div>
+    <div id="Menu"><u>View Menu</u></div></div>
     <div id="ReadMoreImg"></div>
     <div id="ReadMore"></div>
     <div id="ReadMore"><a href="pages/branches.php?name=SBG"><u>Read More</u></a></div>
@@ -40,7 +42,7 @@
     <div id="RestoImg" class="NMSIMG"></div>
     <div id="RestoHeader">Share The Good Times</div>
     <div id="RestoBody">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Set in Singapore's oldest yet still progressive museum, this Food For Thought invites you to share conversations about our city's past, present and future.
         <br />
         <br />
         93 Stamford Road #01-04/05 
@@ -59,8 +61,9 @@
         <br />
         (Last orders at 9pm)
     </div>
+    <div id='menuNMS'>
     <div id="MenuImg"></div>
-    <div id="Menu"><u>View Menu</u></div>
+    <div id="Menu"><u>View Menu</u></div></div>
     <div id="ReadMoreImg"></div>
         <div id="ReadMore"><a href="pages/branches.php?name=NMS"><u>Read More</u></a></div>
     </div>
@@ -68,16 +71,21 @@
 <!-- Third Column-->
 <div id="RestoWrapper" class="FFFT">
     <div id="RestoImg" class="FFFTIMG"></div>
-    <div id="RestoHeader">Some Header Here</div>
+    <div id="RestoHeader">Fast Food For Thought</div>
     <div id="RestoBody">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        Coming Soon
+        <br />
+        <br />
+        Situated in Singapore Art Musuem at 8Q, this Food For Thought is a walk on the wild side.
         <br />
         <br />
         8 Queen Street
         <br />
+        <!--
         T: +65 6338 9887
         <br />
         F: +65 6338 1080 
+        
     </div>
     <div id="RestoHours">Opening Hours</div>
     <div id="RestoHoursDetails">
@@ -97,5 +105,7 @@
     <div id="Menu"><u>View Menu</u></div>
     <div id="ReadMoreImg"></div>
         <div id="ReadMore"><a href="pages/branches.php?name=FFFT"><u>Read More</u></a></div>
+        -->
     </div>
+        
 </div>

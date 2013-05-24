@@ -270,6 +270,7 @@
         top:450px;
         color:#FFFFFF;     
         margin-top:68px;    
+        cursor:pointer;
 }
 #MenuImg{
         position:absolute;
@@ -284,6 +285,7 @@
         margin-top:68px;
         background:url('../images/Menu.png') no-repeat;
         background-size: 10% 15%;      
+        cursor:pointer;
 }
 /* Causes*/
 #CausesWrapper{
@@ -524,11 +526,11 @@
 }
 .SBGmap{
         background:url('../images/SBG/SBGMap.png') no-repeat;
-        margin-top:2730px;
+        margin-top:2750px;
 }
 .NMSmap{
         background:url('../images/NMS/NMSMap.png') no-repeat;
-        margin-top:2140px;
+        margin-top:1440px;
 }.FFFTmap{
         background:url('../images/FFFT/FFFTMap.png') no-repeat;
         margin-top:2140px;
@@ -548,7 +550,7 @@
         margin-top:3530px;
 }
 .NMShowto{
-        margin-top:2950px;
+        margin-top:2250px;
 }
 #please{
         left:1000px;
@@ -567,7 +569,7 @@
         display:block;
         width:197px;
         height:191px;
-        background:url('../images/bus.png') no-repeat;
+        background:url('../images/transpo/bus.png') no-repeat;
         margin-top:3600px;
         background-size: 20% 20%;
 }
@@ -576,8 +578,8 @@
         display:block;
         width:197px;
         height:191px;
-        background:url('../images/bus.png') no-repeat;
-        margin-top:3000px;
+        background:url('../images/transpo/bus.png') no-repeat;
+        margin-top:2300px;
         background-size: 20% 20%;
 }
 #Car{
@@ -585,7 +587,7 @@
         display:block;
         width:197px;
         height:191px;
-        background:url('../images/car.png') no-repeat;
+        background:url('../images/transpo/car.png') no-repeat;
         margin-top:3600px;
         background-size: 20% 20%;
 }
@@ -594,8 +596,8 @@
         display:block;
         width:197px;
         height:191px;
-        background:url('../images/car.png') no-repeat;
-        margin-top:3000px;
+        background:url('../images/transpo/car.png') no-repeat;
+        margin-top:2300px;
         background-size: 20% 20%;
 }
 #Taxi{
@@ -603,7 +605,7 @@
         display:block;
         width:197px;
         height:191px;
-        background:url('../images/taxi.png') no-repeat;
+        background:url('../images/transpo/taxi.png') no-repeat;
         margin-top:3600px;
         background-size: 20% 20%;
 }
@@ -612,8 +614,8 @@
         display:block;
         width:197px;
         height:191px;
-        background:url('../images/taxi.png') no-repeat;
-        margin-top:3000px;
+        background:url('../images/transpo/taxi.png') no-repeat;
+        margin-top:2300px;
         background-size: 20% 20%;
 }
 #Train{
@@ -621,7 +623,7 @@
         display:block;
         width:197px;
         height:191px;
-        background:url('../images/train.png') no-repeat;
+        background:url('../images/transpo/train.png') no-repeat;
         margin-top:3600px;
         background-size: 20% 20%;
 }
@@ -630,8 +632,8 @@
         display:block;
         width:197px;
         height:191px;
-        background:url('../images/train.png') no-repeat;
-        margin-top:3000px;
+        background:url('../images/transpo/train.png') no-repeat;
+        margin-top:2300px;
         background-size: 20% 20%;
 }
 #transdesc{
@@ -650,7 +652,7 @@
         display:block;
         width:300px;
         height:620px;
-        margin-top:3010px;
+        margin-top:2310px;
         font-family:Stag-Bold;
         font-size:14px;
         color:#000000; 
@@ -672,7 +674,7 @@
         display:block;
         width:230px;
         height:620px;
-        margin-top:3040px;
+        margin-top:2340px;
         font-family:Stag-Book;
         font-size:13px;
         color:#000000; 
@@ -695,7 +697,7 @@
         display:block;
         width:230px;
         height:620px;
-        margin-top:3240px;
+        margin-top:2540px;
         font-family:Stag-Bold;
         font-size:15px;
         color:#000000; 
@@ -743,7 +745,7 @@
         display:block;
         width:215px;
         height:165px;
-        background:url('../images/SBGlogo.png') no-repeat;
+        background:url('../images/logo/SBGlogo.png') no-repeat;
         margin-top:200px;
 }
 #NMSLogo{
@@ -752,7 +754,7 @@
         display:block;
         width:215px;
         height:165px;
-        background:url('../images/NMSlogo.png') no-repeat;
+        background:url('../images/logo/NMSlogo.png') no-repeat;
         margin-top:200px;
 }
 #FFFTLogo{
@@ -761,7 +763,7 @@
         display:block;
         width:200px;
         height:285px;
-        background:url('../images/FFFTlogo.png') no-repeat;
+        background:url('../images/logo/FFFTlogo.png') no-repeat;
         margin-top:200px;
 }
 #SBGMotto{
@@ -770,7 +772,7 @@
         display:block;
         width:250px;
         height:115px;
-        background:url('../images/SBGmotto.png') no-repeat;
+        background:url('../images/logo/SBGmotto.png') no-repeat;
         margin-top:380px;
 }
 #NMSMotto{
@@ -779,7 +781,7 @@
         display:block;
         width:250px;
         height:115px;
-        background:url('../images/NMSmotto.png') no-repeat;
+        background:url('../images/logo/NMSmotto.png') no-repeat;
         margin-top:380px;
 }
 #FFFTMotto{
@@ -788,7 +790,7 @@
         display:block;
         width:250px;
         height:115px;
-        background:url('../images/FFFTmotto.png') no-repeat;
+        background:url('../images/logo/FFFTmotto.png') no-repeat;
         margin-top:380px;
 }
 #poster{
@@ -936,28 +938,28 @@ A.slidesjs-next{
     top:1060px;
 }
 .locationheaderSBG{
-    top:2600px;
+    top:2625px;
 }
 .locationheaderNMS{
-    top:2000px;
+    top:1300px;
 }
 .locationhrNMS{
-    top:2010px;
+    top:1310px;
 }
 .locationhrSBG{
-    top:2610px;
+    top:2635px;
 }
 .reservationheader{
     top:3700px;
 }
 .reservationheaderNMS{
-    top:3100px;
+    top:2400px;
 }
 .reservationhr{
     top:3710px;
 }
 .reservationhrNMS{
-    top:3110px;
+    top:2410px;
 }
 .picnicheader{
     top:4350px;
@@ -966,13 +968,13 @@ A.slidesjs-next{
     top:4360px;
 }
 .SBGIMG{
-    background:url('../images/SBG.png') no-repeat;
+    background:url('../images/resto/SBG.png') no-repeat;
 }
 .NMSIMG{
-    background:url('../images/NMS.png') no-repeat;
+    background:url('../images/resto/NMS.png') no-repeat;
 }
 .FFFTIMG{
-    background:url('../images/FFFT.png') no-repeat;
+    background:url('../images/resto/FFFT.png') no-repeat;
 }
 .whatsonheader{
     top:1800px;
@@ -1039,6 +1041,10 @@ A.slidesjs-next{
     background:url('../images/SBG/SBG1.png') no-repeat;
     margin-top:550px;
 }
+.NMSIMG1{
+    background:url('../images/NMS/NMS1.jpg') no-repeat;
+    margin-top:700px;
+}
 .BlankIMG1{
     background:url('../images/Blank.png') no-repeat;
     margin-top:700px;
@@ -1053,7 +1059,7 @@ A.slidesjs-next{
 }
 .SBGIMG3{
     background:url('../images/SBG/SBG3.png') no-repeat;
-    margin-top:2000px;
+    margin-top:2050px;
 }
 .SBGIMG4{
     background:url('../images/SBG/SBG4.png') no-repeat;
@@ -1093,13 +1099,13 @@ A.slidesjs-next{
     margin-top:3880px;
 }
 .dayNMS{
-    margin-top:3270px;
+    margin-top:2570px;
 }
 .daydetails{
     margin-top:3900px;
 }
 .daydetailsNMS{
-    margin-top:3290px;
+    margin-top:2590px;
 }
 .email{
     margin-top:5100px;
@@ -1114,10 +1120,10 @@ A.slidesjs-next{
     margin-top:3420px;
 }
 .descSBG{
-    margin-top:1850px;
+    margin-top:1825px;
 }
 .descNMS{
-    margin-top:550px;
+    margin-top:530px;
 }
 .picnic{
     margin-top:5620px;
@@ -1165,7 +1171,7 @@ LI{
     margin-top:4050px;
 }
 #NMS{
-    margin-top:3450px;
+    margin-top:2700px;
 }
 .stick {
     position: fixed;

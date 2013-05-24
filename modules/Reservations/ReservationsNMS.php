@@ -5,16 +5,14 @@
 
 <div id="policyheader" class="dayNMS">Weekdays</div>
 <div id="policybody" class="daydetailsNMS">
-    We accept reservations
-    <br><br>
-    <b>Weekends</b>
+    No reservations taken for lunch between 12pm - 2pm.
     <br>
-    Reservations accepted from 8am - 10am and 3pm - 7.30pm<br>
-    Maximum group size of 12
+    Last reservations taken for dinner at 7.30pm
     <br><br>
-    <b>Public Holidays</b>
+    <b>Weekends & Public Holidays</b>
     <br>
-    No reservations
+    No reservations taken for lunch between 12pm - 6pm<br>
+    Last reservations taken for dinner at 7.30pm            
 </div>
 <!--
 <div id="policyheader" class="emailNMS">Reservations through email</div>
