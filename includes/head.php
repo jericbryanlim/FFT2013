@@ -1,9 +1,3 @@
-<html>
-    <head>
-        <title>
-            <?php $title = 'Food For Thought'; ?>
-            <?php echo $title ?>
-        </title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <script type="text/javascript" src="js/jquery.js"></script>
