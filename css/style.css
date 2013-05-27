@@ -123,6 +123,9 @@
         font-size:14px;
         cursor:pointer;
 }
+#Close{
+        cursor:pointer;
+}
 #SubNavBar{
         position:absolute;
         display:block;
@@ -168,14 +171,14 @@
 #RestoWrapper{
 	position:absolute;
 	top:1225px;
-	right:8;
+	right:8px;
 	height:575px;
-  width:340px;
+        width:340px;
 	background:#000000;
 }
 #Social{
 	position:absolute;
-	right:10;
+	right:10px;
         top:150px;
 }
 #RestoImg{
@@ -272,6 +275,77 @@
         margin-top:68px;    
         cursor:pointer;
 }
+#Menuheader
+{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;
+        left: 50px;
+        top:50px;
+        color:#FFFFFF;        
+}
+#Close
+{
+        position:absolute;
+        display:block;
+        left: 800px;
+        top:20px;
+        color:#FFFFFF;  
+        font-family:Stag-Book;
+        font-size:15px; 
+}
+#menuwrapper{
+        position:absolute;
+        display:block;
+        width:800px;
+        height:600px;
+        left: 250px;
+        top:50px;
+        color:#000000;
+        background:#FFFFFF;        
+        opacity:0.75;                                
+}
+#SBGMenu{
+        position:absolute;
+        display:block;
+        width:580px;
+        height:600px;
+        left: 300px;
+        top:50px;
+        overflow-y:auto;
+}
+.SBGbranch{
+        font-family:Stag-Bold;
+        font-size:25px;    
+}
+.menu{        
+        font-family:Stag-Bold;
+        font-size:16px;         
+}
+.links{        
+        font-family:Stag-Bold;
+        font-size:13px;         
+}
+#fadeOverlay
+{
+        opacity:0.95;
+        display:none;
+        position:fixed;
+        left:200px;
+        top:0;
+        width:70%;
+        height:100%;
+        z-index:9999;
+        background:#111;
+}
+.recommendation{
+        font-family:Stag-Book;
+        font-size:12px;     
+        margin-top: 175px;
+        width:60%;
+}
+
 #MenuImg{
         position:absolute;
         display:block;
@@ -286,6 +360,30 @@
         background:url('../images/Menu.png') no-repeat;
         background-size: 10% 15%;      
         cursor:pointer;
+}
+#confirm{      
+        font-family:Stag-Book;
+        font-size:13px;        
+}
+#kids{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;        
+        left: 130px;                      
+        background:url('../images/kidsmenuwob.png') no-repeat;
+        background-size: 10% 15%;          
+        top: 425px;
+}
+#vege{
+        position:absolute;
+        display:block;
+        width:275px;
+        height:165px;        
+        left: 65px;                      
+        background:url('../images/vegetarianwob.png') no-repeat;
+        background-size: 10% 15%;          
+        top: 455px;
 }
 /* Causes*/
 #CausesWrapper{
@@ -1022,6 +1120,7 @@ A.slidesjs-next{
     left:980px;
     top:915px;
 }
+
 .eventsbigIMG{
     background:url('../images/Events/Event1.png') no-repeat;
 }
@@ -1134,6 +1233,7 @@ A.slidesjs-next{
 BODY{
 	background-color: #FFFFFF;
 	color:#FFFFFF;
+        overflow-x:hidden;
 }
 A, A:link, A:visited{
 	color:#FFFFFF;
@@ -1182,4 +1282,27 @@ LI{
     position: fixed;
     top: 10px;
     z-index:9999;
+}
+
+
+/* webkit */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(221,82,60,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
 }

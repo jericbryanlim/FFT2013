@@ -52,7 +52,7 @@
         <tr>
             <td>
                 <select name="branch">
-                  <option value="">--------------------------------------------</option>
+                  <option value="" disabled="disabled">----------Choose a Branch----------</option>
                   <option value="SBG">Singapore Botanical Garden</option>
                   <option value="NMS">National Museum of Singapore</option>
                   <!--
@@ -62,7 +62,7 @@
             </td>
             <td>
                 <select name="pax">
-                  <option value="">-</option>  
+                  <option value="" disabled="disabled">-</option>  
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -71,10 +71,16 @@
                   <option value="6">6</option>
                   <option value="7">7</option>
                   <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                 </select>
             </td>    
             <td>
+                
                 <input type="text" value="<?php echo date('d/m/Y'); ?>" id="date" name='date'></td>            
+                
             <td><input type="time" value="09:00" min="09:00" max="16:00" step="900" name="time"></td>    
         </tr>            
         <tr>

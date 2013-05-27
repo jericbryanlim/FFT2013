@@ -13,18 +13,28 @@
             $pax    = $_POST['pax'];
             $date   = $_POST['date'];
             $time   = $_POST['time'];
-
-            echo $message = $name . "<br>" . $email . "<br>" . $contact . "<br>" . $branch . "<br>" . $pax . "<br>" . $date . "<br>" . $time;
-            
+                       
+            echo $message = "Name: " . $name . "<br>" . 
+                            "Email: " . $email . "<br>" . 
+                            "Contact Number: " . $contact . "<br>" . 
+                            "Branch: " . $branch . "<br>" . 
+                            "No. of Pax: " . $pax . "<br>" . 
+                            "Date: " . $date . "<br>" . 
+                            "Time: " . $time;
+        ?>
+        
+        <?php
             $subject = 'Reservation @' . $branch;
             $mail = 'eat@foodforthought.com.sg';
             
             if (mail($mail, $subject, $message)) {
                 echo "email sent";
             } else {
-                echo "[B]email could not be sent[/B]";
+                echo "email could not be sent";
             }            
         }
     }
+    else
+        echo 'failed';
     //header( 'Location: https://localhost/FFT2013/pages/branches.php?name=SBG#ReservationsID' ) ;
 ?>

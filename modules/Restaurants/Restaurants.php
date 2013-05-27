@@ -15,7 +15,7 @@
         Based within Singapore's most historical 
         <br>garden park, this Food For Thought celebrates family, rest and sustainable living.
         <br />
-        <br />
+        <br /><br />
         1 Cluny Road, Singapore Botanic Gardens, 
         <br />
         Tanglin Gate, #B1-00, S259569
@@ -30,13 +30,14 @@
         <br />
         (Last orders at 8.30pm)
     </div>
-    <div id='menuSBG'>
+    <div id='menuSBG' onclick="showDiv(4);">
     <div id="MenuImg"></div>
     <div id="Menu"><u>View Menu</u></div></div>
     <div id="ReadMoreImg"></div>
     <div id="ReadMore"></div>
     <div id="ReadMore"><a href="pages/branches.php?name=SBG"><u>Read More</u></a></div>
 </div>
+
 <!-- Second Column-->
 <div id="RestoWrapper" class="NMS">
     <div id="RestoImg" class="NMSIMG"></div>
@@ -79,7 +80,7 @@
         Situated in Singapore Art Musuem at 8Q, this Food For Thought is a walk on the wild side.
         <br />
         <br />
-        8 Queen Street
+        8 Queen Street, S188535
         <br />
         <!--
         T: +65 6338 9887

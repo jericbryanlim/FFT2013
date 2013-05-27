@@ -13,39 +13,14 @@ function showDiv(div_number) {
         document.getElementById(1).style.display = 'none';
         document.getElementById(2).style.display = 'none';
         document.getElementById(3).style.display = 'block';
-    }                            
+    }  
+    else if(div_number==4){
+        document.getElementById("fadeOverlay").style.display = 'block';              
+    } 
+    else if(div_number==5){
+        document.getElementById("fadeOverlay").style.display = 'none';                        
+    } 
 }
-
-$(document).ready(function(){
-    $('#menuSBG').click(function(){
-        // Appedning the overlay div
-        $('body').append(
-                '<div id="fadeOverlay" style="opacity:0.80;display:none;position:fixed;left:133;top:0;width:81%;height:100%;z-index:9999;background:#000;"></div>'
-        );
-        // Apply fadeIn animation for the smoothing effect.
-        $('#fadeOverlay').css({'filter' : 'alpha(opacity=80)'}).fadeIn();
-    });
-    // Remove the overlay div when clicking on the fade in area.
-    $('#message').click(function() {
-        $(this).fadeOut("slow", function() {$(this).remove();});
-    });
- 
-});
-$(document).ready(function(){
-    $('#menuNMS').click(function(){
-        // Appedning the overlay div
-        $('body').append(
-                '<div id="fadeOverlay" style="opacity:0.80;display:none;position:fixed;left:0;top:0;width:100%;height:100%;z-index:9999;background:#000;"></div>'
-        );
-        // Apply fadeIn animation for the smoothing effect.
-        $('#fadeOverlay').css({'filter' : 'alpha(opacity=80)'}).fadeIn();
-    });
-    // Remove the overlay div when clicking on the fade in area.
-    $('#message').click(function() {
-        $(this).fadeOut("slow", function() {$(this).remove();});
-    });
- 
-});
 $(document).ready(function() {
     $('#PIC2').click(function() {			 
       $('#PIC2').css({ "position": "relative", "top": "0px"});  
@@ -75,19 +50,18 @@ $(document).ready(function() {
       $('.picniccust').css("background-color","#DD523C");
     });
 });
+
 $(document).ready(function() {
     
     // Cache selectors for faster performance.
     var $window = $(window),
         $mainMenuBar = $('#mainMenuBar'),
         $mainMenuBarAnchor = $('#mainMenuBarAnchor');
-        
-
     // Run this on scroll events.
     $window.scroll(function() {
         var window_top = $window.scrollTop();
         var div_top = $mainMenuBarAnchor.offset().top;
-        
+       
         if ((window_top + 100) > div_top) {
             // Make the div sticky.
             $mainMenuBar.addClass('stick');
@@ -106,6 +80,7 @@ $(document).ready(function() {
         }          
     });
 });
+/*
 $(function() {
     $('#btnstyle').bind('click', function(){
         var txtVal =  $('#date').val();
@@ -147,7 +122,7 @@ function isDate(txtDate)
 }
 
 });
-
+*/
 function validate(evt) {
   var theEvent = evt || window.event;
   var key = theEvent.keyCode || theEvent.which;
