@@ -27,7 +27,7 @@
 
 <!-- reservation form -->
 
-<form id="SBG" action="../confirm.php" method="post">
+<form id="SBG" action="../verify.php" method="post">
     <table>
         <tr>
             <td>Name*<td>
@@ -53,11 +53,8 @@
             <td>
                 <select name="branch">
                   <option value="" disabled="disabled">----------Choose a Branch----------</option>
-                  <option value="SBG">Singapore Botanical Garden</option>
-                  <option value="NMS">National Museum of Singapore</option>
-                  <!--
-                  <option value="FFFT">Fast Food for Thought</option>
-                  -->
+                  <option value="SBG">   Singapore Botanical Garden</option>
+                  <option value="NMS"> National Museum of Singapore</option>
                 </select>
             </td>
             <td>
@@ -79,9 +76,9 @@
             </td>    
             <td>
                 
-                <input type="text" value="<?php echo date('d/m/Y'); ?>" id="date" name='date'></td>            
+                <input type="date" format="DD/MM/YYYY" min="<?php echo date('Y-m-d', strtotime("+4 days")); ?>" id="date" name='date'></td>            
                 
-            <td><input type="time" value="09:00" min="09:00" max="16:00" step="900" name="time"></td>    
+            <td><input type="time" value="08:00" step="900" name="time"></td>    
         </tr>            
         <tr>
             <td>Additional Information</td>

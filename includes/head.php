@@ -12,7 +12,7 @@
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="../js/script.js"></script> 
         <script type="text/javascript" src="js/validation.js"></script>
-        <script type="text/javascript" src="../js/validation.js"></script>        	
+        <script type="text/javascript" src="../js/validation.js"></script> 
     </head>        
     <body>
 <?php
@@ -20,6 +20,9 @@
     $shortline = "__________________________________";
     $eventline = "________________________________________________";
     $subeventline = "______________________";
+    
+    global $branch;   
+    global $message;
 ?>
 
             

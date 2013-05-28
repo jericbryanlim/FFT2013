@@ -25,7 +25,7 @@
 
 <!-- reservation form -->
 
-<form id="NMS">
+<form id="NMS" action="../verify.php" method="post">
     <table>
         <tr>
             <td>Name*<td>
@@ -33,9 +33,9 @@
             <td>Contact Number*</td>
         </tr>
         <tr>
-            <td colspan="2"><input type="text" size="60" value="" id="name" maxlength="60"></td>
-            <td colspan="2"><input type="email" size="60" value="" id="email" maxlength="60"></td>
-            <td><input type="text" size="35" value="" id="contact" maxlength="8"></td>
+            <td colspan="2"><input type="text" size="60" value="" name="name" maxlength="60" required></td>
+            <td colspan="2"><input type="email" size="60" value="" name="email" maxlength="60" required></td>
+            <td><input type="text" size="35" value="" name="contact" maxlength="8" required onkeypress='validate(event)'></td>
         </tr>
         <tr>
             <td>Which branch*</td>
@@ -49,14 +49,15 @@
         </tr>
         <tr>
             <td>            
-                <select>
-                  <option value="SBG">Singapore Botanical Garden</option>
-                  <option value="NMS">National Museum of Singapore</option>
-                  <option value="FFFT">Fast Food for Thought</option>
+               <select name="branch">
+                  <option value="" disabled="disabled">----------Choose a Branch----------</option>
+                  <option value="SBG">   Singapore Botanical Garden</option>
+                  <option value="NMS"> National Museum of Singapore</option>
                 </select>
             </td>
             <td>
-                <select>
+                <select name="pax">
+                  <option value="" disabled="disabled">-</option>  
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -65,10 +66,14 @@
                   <option value="6">6</option>
                   <option value="7">7</option>
                   <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                 </select>
             </td>            
-            <td><input type="date" value="<?php echo date('Y-m-d'); ?>" min="<?php echo date('Y-m-d'); ?>"></td>       
-            <td><input type="time"></td>    
+            <td><input type="date" format="DD/MM/YYYY" min="<?php echo date('Y-m-d', strtotime("+4 days")); ?>" id="date" name='date'></td>      
+            <td><input type="time" value="08:00" step="900" name="time"></td>   
         </tr>            
         <tr>
             <td>Additional Information</td>

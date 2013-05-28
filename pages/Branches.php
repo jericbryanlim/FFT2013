@@ -6,7 +6,7 @@ include_once('../modules/SubNavigationBar/SubNavigationBar.php');
      if($branch == 'SBG'){       
         include_once('../modules/AboutResto/AboutSBG.php');
         include_once('../modules/Location/LocationSBG.php');
-        include_once('../modules/Reservations/ReservationsSBG.php');
+        include_once('../modules/Reservations/ReservationsSBG.php');        
         include_once('../modules/Picnic/Picnic.php');
      }elseif($branch == 'NMS'){
         include_once('../modules/AboutResto/AboutNMS.php');

@@ -147,6 +147,7 @@
         left:138px;
         width:1000px;
 }
+
 /* Restaurants */
 #Header{
     position:absolute;
@@ -338,6 +339,19 @@
         height:100%;
         z-index:9999;
         background:#111;
+}
+#fadeConfirm
+{
+        opacity:0.95;
+        display:none;
+        position:fixed;
+        left:200px;
+        top:175px;
+        width:70%;
+        height:50%;
+        z-index:9999;
+        background:#DD523C;
+        overflow-y:auto;        
 }
 .recommendation{
         font-family:Stag-Book;
@@ -1278,12 +1292,6 @@ LI{
     top: 0;
     z-index:9999;
 }
-.stick2 {
-    position: fixed;
-    top: 10px;
-    z-index:9999;
-}
-
 
 /* webkit */
 

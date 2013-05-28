@@ -50,7 +50,6 @@ $(document).ready(function() {
       $('.picniccust').css("background-color","#DD523C");
     });
 });
-
 $(document).ready(function() {
     
     // Cache selectors for faster performance.
@@ -80,49 +79,6 @@ $(document).ready(function() {
         }          
     });
 });
-/*
-$(function() {
-    $('#btnstyle').bind('click', function(){
-        var txtVal =  $('#date').val();
-        if(isDate(txtVal));
-        else
-            alert('Invalid Date');
-    });
-    
-function isDate(txtDate)
-{
-    var currVal = txtDate;
-    if(currVal == '')
-        return false;
-    
-    var rxDatePattern = /^(\d{1,2})(\/)(\d{1,2})(\/)(\d{4})$/; //Declare Regex
-    var dtArray = currVal.match(rxDatePattern); // is format OK?
-    
-    if (dtArray == null) 
-        return false;
-    
-    //Checks for mm/dd/yyyy format.
-    dtMonth = dtArray[3];
-    dtDay= dtArray[1];
-    dtYear = dtArray[5];        
-    
-    if (dtMonth < 1 || dtMonth > 12) 
-        return false;
-    else if (dtDay < 1 || dtDay> 31) 
-        return false;
-    else if ((dtMonth==4 || dtMonth==6 || dtMonth==9 || dtMonth==11) && dtDay ==31) 
-        return false;
-    else if (dtMonth == 2) 
-    {
-        var isleap = (dtYear % 4 == 0 && (dtYear % 100 != 0 || dtYear % 400 == 0));
-        if (dtDay> 29 || (dtDay ==29 && !isleap)) 
-                return false;
-    }
-    return true;
-}
-
-});
-*/
 function validate(evt) {
   var theEvent = evt || window.event;
   var key = theEvent.keyCode || theEvent.which;
