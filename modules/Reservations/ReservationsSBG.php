@@ -17,13 +17,6 @@
     <br>
     No reservations
 </div>
-<!--div id="policyheader" class="email">Reservations through email</div>
-<div id="policybody" class="reply">
-            2 weeks in advance
-    <br />  (reservations are only confirmed 
-    <br />when there is an email reply)
-</div-->
-
 
 <!-- reservation form -->
 
@@ -35,9 +28,9 @@
             <td>Contact Number*</td>
         </tr>
         <tr>
-            <td colspan="2"><input type="text" size="60" value="" name="name" maxlength="60" required></td>
-            <td colspan="2"><input type="email" size="60" value="" name="email" maxlength="60" required></td>
-            <td><input type="text" size="35" value="" name="contact" maxlength="8" required onkeypress='validate(event)'></td>            
+            <td colspan="2"><input type="text" size="60" value="" name="name" maxlength="60"></td>
+            <td colspan="2"><input type="text" size="60" value="" id="email" name="email" maxlength="60" onblur='checkEmail()'></td>
+            <td><input type="text" size="35" value="" name="contact" maxlength="8" onkeypress='validate(event)'></td>            
         </tr>
         <tr>
             <td>Which branch*</td>
@@ -74,11 +67,27 @@
                   <option value="12">12</option>
                 </select>
             </td>    
+            <td><input type="text" name="date" id="date" />
             <td>
-                
-                <input type="date" format="DD/MM/YYYY" min="<?php echo date('Y-m-d', strtotime("+4 days")); ?>" id="date" name='date'></td>            
-                
-            <td><input type="time" value="08:00" step="900" name="time"></td>    
+                <select name="hour">
+                  <option value="" disabled="disabled">--</option>                  
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                </select>
+                <select name="mins">
+                  <option value="" disabled="disabled">--</option>
+                  <option value="00">00</option>
+                  <option value="15">15</option>
+                  <option value="30">30</option>
+                  <option value="45">45</option>                  
+                </select>
+            </td>    
         </tr>            
         <tr>
             <td>Additional Information</td>
@@ -87,11 +96,10 @@
             <td colspan="4"><textarea cols="100" rows="3" name="info"></textarea></td>
             <td><input type="submit" value="Request" style="height: 4.5em; width: 19em; 
                        background-color:#DD523C;" id="btnstyle"></td>
-        </tr>
-        <tr><td><div id="results"><div></td>
-        </tr>    
+        </tr>            
     </table>
 </form>
+
 </div>
 
 

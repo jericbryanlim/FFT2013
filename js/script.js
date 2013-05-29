@@ -14,36 +14,30 @@ function showDiv(div_number) {
         document.getElementById(2).style.display = 'none';
         document.getElementById(3).style.display = 'block';
     }  
-    else if(div_number==4){
-        document.getElementById("fadeOverlay").style.display = 'block';              
-    } 
-    else if(div_number==5){
-        document.getElementById("fadeOverlay").style.display = 'none';                        
-    } 
 }
 $(document).ready(function() {
     $('#PIC2').click(function() {			 
-      $('#PIC2').css({ "position": "relative", "top": "0px"});  
-      $('#PIC4').css({ "position": "relative", "top": "500px"});
-      $('#PICcust').css({ "position": "relative", "top": "500px"});
+      $('#PIC2').css({ "position": "relative", "top": "0px", "left": "-50px"});  
+      $('#PIC4').css({ "position": "relative", "top": "500px", "left": "-50px"});
+      $('#PICcust').css({ "position": "relative", "top": "500px", "left": "-50px"});
       
       $('.picnic2').css("background-color","#DD523C");
       $('.picnic4').css("background-color","#000000");
       $('.picniccust').css("background-color","#000000");
     });	
     $('#PIC4').click(function() {			 
-      $('#PIC2').css({ "position": "relative", "top": "0px"});  
-      $('#PIC4').css({ "position": "relative", "top": "0px"});
-      $('#PICcust').css({ "position": "relative", "top": "+500px"});
+      $('#PIC2').css({ "position": "relative", "top": "0px", "left": "-50px"});  
+      $('#PIC4').css({ "position": "relative", "top": "0px", "left": "-50px"});
+      $('#PICcust').css({ "position": "relative", "top": "+500px", "left": "-50px"});
       
       $('.picnic2').css("background-color","#000000");
       $('.picnic4').css("background-color","#DD523C");
       $('.picniccust').css("background-color","#000000");
     });	
     $('#PICcust').click(function() {	
-      $('#PIC2').css({ "position": "relative", "top": "0px"});  
-      $('#PIC4').css({ "position": "relative", "top": "0px"});
-      $('#PICcust').css({ "position": "relative", "top": "0px"});
+      $('#PIC2').css({ "position": "relative", "top": "0px", "left": "-50px"});  
+      $('#PIC4').css({ "position": "relative", "top": "0px", "left": "-50px"});
+      $('#PICcust').css({ "position": "relative", "top": "0px", "left": "-50px"});
       
       $('.picnic2').css("background-color","#000000");
       $('.picnic4').css("background-color","#000000");
@@ -88,6 +82,17 @@ function validate(evt) {
         theEvent.returnValue = false;
         if(theEvent.preventDefault) theEvent.preventDefault();        
   }
+}
+function checkEmail() {
+
+    var email = document.getElementById('email');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) {
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;
+ }
 }
 $(function() {
 

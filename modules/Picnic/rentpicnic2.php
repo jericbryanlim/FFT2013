@@ -4,9 +4,10 @@
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                  </select>";
-    $two = "<font color='red'> TWO </font>";        
+    $two = "<font color='red'> TWO </font>";      
 ?>
 <div id="1" style="display:none">
+    <form id='picnicvalidation' method='post' action='../details.php'>
     <div id="choices" class="menucol1">CHOOSE <?php echo $two; ?>SANDWICHES<br>
         <div class="subchoices">
             <?php echo $dropdown; ?> &nbsp; Grilled Eggplant, Tomato, Onions <i> with tapenade & pesto </i>                                  <br>
@@ -94,4 +95,5 @@
     <div id="reservenote" class="two">
     Picnic Baskets returned before 6pm on the same day of purchase will be refunded $50. Picnic Baskets returned after 8.30pm will have their deposit forfeited. If Picnic Baskets are damaged upon return, a $25 repair fee will be deducted from the deposit. This fee is subject to FFT's discretion. In the event of rain, picnic orders are not refundable.
     </div>
+    </form>
 </div>

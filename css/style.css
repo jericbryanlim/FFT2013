@@ -54,8 +54,8 @@
 }
 #BackColour_SubNavBar{
 	position:absolute;
-	left:8;
-	right:8;
+	left:8px;
+	right:8px;
 	height:120px;
 	background:#DD523C;
         top: 120px;
@@ -63,8 +63,9 @@
 }
 #BackColour_Picnic{
 	position:absolute;
-	left:138;
-	right:125;
+	left:138px;
+	/*right:125px;*/
+        width: 1090px;
 	height: 45px;
 	background:#000000;         
 }
@@ -352,6 +353,9 @@
         z-index:9999;
         background:#DD523C;
         overflow-y:auto;        
+}
+.confirm{
+    margin-left:138px;
 }
 .recommendation{
         font-family:Stag-Book;
@@ -986,12 +990,12 @@ A.slidesjs-next{
     left:600px;
 }
 .NavBarCol1_main{
-    left:600px;
+    margin-left:600px;
     top:550px;
     display:inline;
 }
 .NavBarCol1_branch{
-    left:600px;
+    margin-left:600px;
     top:0px;
     display:inline;
 }
@@ -1245,8 +1249,8 @@ A.slidesjs-next{
 /* HTML Elements
 ****************************************************************************/
 BODY{
-	background-color: #FFFFFF;
-	color:#FFFFFF;
+	/*background-color: #FFFFFF;
+	color:#FFFFFF;*/
         overflow-x:hidden;
 }
 A, A:link, A:visited{
@@ -1258,10 +1262,8 @@ table{
         display:block;
         font-family:Stag-Book;
         font-size:13px;
-        color:#000000; 
-        left:138px;
-        text-transform:uppercase;
-        
+        /*color:#000000; */
+            
 }
 
 DL{
@@ -1283,14 +1285,21 @@ LI{
 }
 #SBG{
     margin-top:4050px;
+    margin-left:138px;
 }
 #NMS{
     margin-top:2700px;
+    margin-left:138px;
+}
+#Accordion{
+    margin-top:4500px;
+    margin-left:138px;
 }
 .stick {
     position: fixed;
     top: 0;
     z-index:9999;
+    left:0px;
 }
 
 /* webkit */

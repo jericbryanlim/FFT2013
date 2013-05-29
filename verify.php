@@ -5,13 +5,28 @@
     
     
     if (    isset($_POST['name']) && isset($_POST['email']) && isset($_POST['contact']) &&
-            isset($_POST['branch']) && isset($_POST['pax']) && isset($_POST['date']) && isset($_POST['time'])
+            isset($_POST['branch']) && isset($_POST['pax']) && isset($_POST['date']) && 
+            isset($_POST['hour']) && isset($_POST['mins'])
         ){
-        if($_POST['date']==''){
-            $message = "<br><br><br><br><br><br><br><table align='center' width='75%' cellpadding='2'>
-                        <td colspan='2' align='center'><h2>Please indicate date of reservation </h2></td>
-                        <tr><td colspan='2' align='center'><a href='javascript:history.go(-1)'>BACK</a></td>
+        if($_POST['name']=='' || $_POST['email']=='' || $_POST['contact']=='' || $_POST['date']=='' ){
+            $message = "<br><br><br><table align='center' width='75%' cellpadding='2' class='confirm'>
+                        <td colspan='2' align='center'><h2>Please indicate the following:</h2><font size='4'>";
+            if($_POST['name']==''){             
+                $message .= "<br>NAME";
+            }
+            if($_POST['email']==''){             
+                $message .= "<br>EMAIL";
+            }
+            if($_POST['contact']==''){             
+                $message .= "<br>CONTACT NUMBER";
+            }
+            if($_POST['date']==''){             
+                $message .= "<br>RESERVATION DATE";
+            }
+            $message .= "</td>
+                        <tr><td colspan='2' align='center'><br><br><br><a href='javascript:history.go(-1)'>BACK</a></td>
                         </table>"; 
+            
             $send = FALSE;
         }else{
             $name   = strtoupper(sanitizeString($_POST['name']));
@@ -20,10 +35,11 @@
             $branch = strtoupper($_POST['branch']);
             $pax    = $_POST['pax'];
             $date   = $_POST['date'];
-            $time   = $_POST['time'];
+            $hour   = $_POST['hour'];
+            $mins   = $_POST['mins'];
             $info   = $_POST['info'];
                        
-            $message =      "<br><table align='center' width='75%' cellpadding='2'>
+            $message =      "<br><table align='center' width='75%' cellpadding='2' class='confirm'>
                                 <tr>
                                     <td colspan='2' align='center'><h2>Kindly confirm details of Reservation</h2></td>
                                 </tr>
@@ -53,7 +69,7 @@
                                 </tr>
                                 <tr>
                                     <td>Time</td>
-                                    <td>" . $time . "</td>
+                                    <td>" . $hour . ":" . $mins . "</td>
                                 </tr>
                                 <tr>
                                     <td>Additional Info</td>
@@ -64,7 +80,8 @@
                                     <td></td>
                                     <td align='right'><br><br><br>                                    
                                     <a href='javascript:history.go(-1)'><input type='button' value='CHANGE RESERVATION DETAILS'></a>
-                                    <a href='confirm.php'><input type='button' value='CONFIRM'></a>
+                                    <a href='confirm.php?name=" . $branch . "'><input type='button' value='CONFIRM'></a>
+                                    
                               </table>                                                            
                               ";
                                                       
