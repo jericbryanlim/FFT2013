@@ -354,8 +354,24 @@
         background:#DD523C;
         overflow-y:auto;        
 }
+#fadeContact
+{
+        opacity:0.95;
+        display:none;
+        position:fixed;
+        left:150px;
+        top:175px;
+        width:80%;
+        height:50%;
+        z-index:9999;
+        background:#DD523C;
+        overflow-y:auto;        
+}
 .confirm{
     margin-left:138px;
+}
+.contact{
+    margin-top:75px;
 }
 .recommendation{
         font-family:Stag-Book;
@@ -588,9 +604,17 @@
     left:138px;
     margin-top:5415px;
 }
+.menucol1down{    
+    left:138px;
+    margin-top:5570px;
+}
 .menucol14{
     left:138px;
     margin-top:5485px;
+}
+.menucol14down{
+    left:138px;
+    margin-top:5640px;
 }
 .menucol1cust{
     left:138px;
@@ -599,6 +623,22 @@
 .menucol2{
     left:550px;
     margin-top:5415px;
+}
+.menucol2down{
+    left:550px;
+    margin-top:5570px;
+}
+.menucol24down{
+    left:550px;
+    margin-top:5640px;
+}
+.menucol2basket{
+    left:550px;
+    margin-top:5670px;
+}
+.menucol24basket{
+    left:550px;
+    margin-top:5770px;
 }
 .menucol24{
     left:550px;
@@ -620,17 +660,82 @@
     left:950px;
     margin-top:5555px;
 }
-.subchoices{
-        
+.wine{        
         position:absolute;
         display:block;
-        width:1050px;
+        width:400px;
         height:100px;
         font-family:Stag-Book;
         font-size:13px;
         color:#000000; 
         text-transform:none;
         margin-top:10px;
+}
+.sandwiches{        
+        position:absolute;
+        display:block;
+        width:400px;
+        height:100px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:10px;
+}
+.desserts{        
+        position:absolute;
+        display:block;
+        width:400px;
+        height:100px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:10px;
+}
+.sides{        
+        position:absolute;
+        display:block;
+        width:400px;
+        height:100px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:10px;
+}
+.drinks2{        
+        position:absolute;
+        display:block;
+        width:400px;
+        height:100px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:0px;
+}
+.drinks4{        
+        position:absolute;
+        display:block;
+        width:400px;
+        height:100px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:0px;
+}
+.basket{        
+        position:absolute;
+        display:block;
+        width:400px;
+        height:100px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:0px;
 }
 #MAP{
         left:138px;
@@ -844,6 +949,24 @@
         left:138px;
 }
 #btnstyle {
+        font-family:Stag-Bold;
+        font-size:13px;  
+        color:#FFFFFF; 
+        text-transform:uppercase;
+}
+#totaltxt {
+        font-family:Stag-Bold;
+        font-size:30px;  
+        color:#000000; 
+        text-transform:uppercase;
+}
+#total4txt {
+        font-family:Stag-Bold;
+        font-size:30px;  
+        color:#000000; 
+        text-transform:uppercase;
+}
+#picnicbtn {
         font-family:Stag-Bold;
         font-size:13px;  
         color:#FFFFFF; 

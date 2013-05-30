@@ -5,8 +5,7 @@
     
     
     if (    isset($_POST['name']) && isset($_POST['email']) && isset($_POST['contact']) &&
-            isset($_POST['branch']) && isset($_POST['pax']) && isset($_POST['date']) && 
-            isset($_POST['hour']) && isset($_POST['mins'])
+            isset($_POST['date']) && isset($_POST['hour']) && isset($_POST['mins'])
         ){
         if($_POST['name']=='' || $_POST['email']=='' || $_POST['contact']=='' || $_POST['date']=='' ){
             $message = "<br><br><br><table align='center' width='75%' cellpadding='2' class='confirm'>
@@ -32,8 +31,10 @@
             $name   = strtoupper(sanitizeString($_POST['name']));
             $email  = strtoupper(sanitizeString($_POST['email']));
             $contact= sanitizeString($_POST['contact']);
-            $branch = strtoupper($_POST['branch']);
-            $pax    = $_POST['pax'];
+            if(isset($_POST['branch']))
+                $branch = strtoupper($_POST['branch']);
+            if(isset($_POST['pax']))
+                $pax    = $_POST['pax'];
             $date   = $_POST['date'];
             $hour   = $_POST['hour'];
             $mins   = $_POST['mins'];
@@ -54,16 +55,19 @@
                                 <tr>
                                     <td>Contact</td>
                                     <td>" . $contact . "</td> 
-                                </tr>
-                                <tr>
+                                </tr>";
+            if(isset($_POST['branch']))
+                 $message .=   "<tr>
                                     <td>Branch</td>
                                     <td>" . $branch . "</td> 
-                                </tr>
-                                <tr>
+                                </tr>";
+            if(isset($_POST['pax']))
+                 $message .=   "<tr>
                                     <td>No. of Pax</td> 
                                     <td>" . $pax . "</td>
-                                </tr>
-                                <tr>
+                                </tr>";
+            
+                 $message .=   "<tr>
                                     <td>Date</td>
                                     <td>" . $date . "</td>
                                 </tr>
@@ -80,7 +84,7 @@
                                     <td></td>
                                     <td align='right'><br><br><br>                                    
                                     <a href='javascript:history.go(-1)'><input type='button' value='CHANGE RESERVATION DETAILS'></a>
-                                    <a href='confirm.php?name=" . $branch . "'><input type='button' value='CONFIRM'></a>
+                                    <a href='confirm.php?name=SBG'><input type='button' value='CONFIRM'></a>
                                     
                               </table>                                                            
                               ";

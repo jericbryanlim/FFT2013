@@ -5,7 +5,7 @@
 
 <div id="picnicnote">*Please allow us 3 working days to get back to you. Reservations are only confirmed when there is an email reply.</div>
 
-<div id="PIC2" onclick="showDiv(1);">
+<div id="PIC2" onclick="showDiv();">
 <div id="BackColour_Picnic" class="picnic2"></div>
 <div id="picnictext" class="picnictext2" style="float:left;">
     <a href="#picnictext" >
@@ -17,7 +17,7 @@
      include_once('rentpicnic2.php');
 ?>
 
-<div id="PIC4" onclick="showDiv(2);">
+<div id="PIC4" onclick="showDiv();">
     <div id="BackColour_Picnic" class="picnic4"></div>
     <div id="picnictext" class="picnictext4">
         <a href="#picnictext">      
@@ -28,7 +28,7 @@
 <?php
      include_once('rentpicnic4.php');
 ?>
-<div id="PICcust"  onclick="showDiv(3);">
+<div id="PICcust"  onclick="showDiv();">
     <div id="BackColour_Picnic" class="picniccust"></div>
     <div id="picnictext" class="picnictextcust">
         <a href="#picnictext">      

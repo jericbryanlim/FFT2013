@@ -1,146 +1,138 @@
 <?php
     include_once('includes/head.php');
     include_once('includes/functions.php');
+    include_once('includes/picnicmenu.php');  
+
+    $type = $_GET['type'];
     
+    if($type==2){
+        $pictype = 'FOR TWO';
+    }else if ($type==4){
+        $pictype = 'FOR FOUR';
+    }else{
+        $pictype = 'CUSTOMISE';
+    }   
+    $sandwich = '';
+    $dessert  = '';   
+    $side    = '';
+    $wine    = '';
     
+    if(isset($_POST['sandwich1']))
+        $sandwich    .= $_POST['sandwich1'] . " " . $sandC1 . "<br>";
+    if(isset($_POST['sandwich2']))
+        $sandwich    .= $_POST['sandwich2'] . " " . $sandC2 . "<br>";
+    if(isset($_POST['sandwich3']))
+        $sandwich    .= $_POST['sandwich3'] . " " . $sandC3 . "<br>";
+    if(isset($_POST['sandwich4']))
+        $sandwich    .= $_POST['sandwich4'] . " " . $sandC4 . "<br>";
     
-    if (    isset($_POST['name']) && isset($_POST['email']) && isset($_POST['contact']) &&
-            isset($_POST['branch']) && isset($_POST['pax']) && isset($_POST['date']) && isset($_POST['time'])
-        ){
-        if($_POST['date']==''){
-            $message = "<br><br><br><br><br><br><br><table align='center' width='75%' cellpadding='2'>
-                        <td colspan='2' align='center'><h2>Please indicate date of reservation </h2></td>
-                        <tr><td colspan='2' align='center'><a href='javascript:history.go(-1)'>BACK</a></td>
-                        </table>"; 
-            $send = FALSE;
-        }else{
-            $name   = strtoupper(sanitizeString($_POST['name']));
-            $email  = strtoupper(sanitizeString($_POST['email']));
-            $contact= sanitizeString($_POST['contact']);
-            $branch = strtoupper($_POST['branch']);
-            $pax    = $_POST['pax'];
-            $date   = $_POST['date'];
-            $time   = $_POST['time'];
-            $info   = $_POST['info'];
-                       
-            $message =      "<br><table align='center' width='75%' cellpadding='2'>
+    if(isset($_POST['dessert1']))
+        $dessert    .= $_POST['dessert1'] . " " . $desC1 . "<br>";
+    if(isset($_POST['dessert2']))
+        $dessert    .= $_POST['dessert2'] . " " . $desC2 . "<br>";
+    if(isset($_POST['dessert3']))
+        $dessert    .= $_POST['dessert3'] . " " . $desC3 . "<br>";
+    if(isset($_POST['dessert4']))
+        $dessert    .= $_POST['dessert4'] . " " . $desC4 . "<br>";
+  
+    if(isset($_POST['side1']))
+        $side    .= $_POST['side1'] . " " . $sideC1 . "<br>";
+    if(isset($_POST['side2']))
+        $side    .= $_POST['side2'] . " " . $sideC2 . "<br>";
+    if(isset($_POST['side3']))
+        $side    .= $_POST['side3'] . " " . $sideC3 . "<br>";
+    if(isset($_POST['side4']))
+        $side    .= $_POST['side4'] . " " . $sideC4 . "<br>";
+    
+    if($type==2){
+        if($_POST['drinks'] == 'bottle')
+            $drinks = $drink2C1 . "<br>"; 
+        else if($_POST['drinks'] == 'canned')
+            $drinks = $drink2C2 . "<br>";
+        else if($_POST['drinks'] == 'mineral')
+            $drinks = $drink2C3 . "<br>";
+    }    
+    
+    if(isset($_POST['basket']))
+        $basket = "YES<br>";
+    else
+        $basket = "NO<br>";
+    
+    if($_POST['wine1']==0 && $_POST['wine2']==0 && $_POST['wine3']==0 && $_POST['wine4']==0 && $_POST['wine5']==0 && $_POST['wine6']==0)
+        $wine    .= "NONE<br>";
+    else{
+        if($_POST['wine1']!=0)
+            $wine    .= $_POST['wine1'] . " " . $wine1 . "<br>";
+        if($_POST['wine2']!=0)
+            $wine    .= $_POST['wine2'] . " " . $wine2 . "<br>";
+        if($_POST['wine3']!=0)
+            $wine    .= $_POST['wine3'] . " " . $wine3 . "<br>";
+        if($_POST['wine4']!=0)
+            $wine    .= $_POST['wine4'] . " " . $wine4 . "<br>";
+        if($_POST['wine5']!=0)
+            $wine    .= $_POST['wine5'] . " " . $wine5 . "<br>";
+        if($_POST['wine6']!=0)
+            $wine    .= $_POST['wine6'] . " " . $wine6 . "<br>";
+    }
+    
+    $total = $_POST['totaltxt'];
+    
+            $message =      "<br><table align='center' width='75%' cellpadding='2' class='confirm'>
                                 <tr>
-                                    <td colspan='2' align='center'><h2>Kindly confirm details of Reservation</h2></td>
+                                    <td colspan='2' align='center'><h2>PLEASE CONFIRM YOUR RESERVATION FOR PICNIC " . $pictype . "</h2></td>                        
                                 </tr>
                                 <tr>
-                                    <td>Name</td> 
-                                    <td>" . $name . "</td>  
+                                    <td><h3>SANDWICHES</h3></td> 
+                                </tr>
+                                <tr>    
+                                    <td>" . $sandwich . "<br></td>  
                                 </tr>
                                 <tr>
-                                    <td>Email</td> 
-                                    <td>" . $email . "</td> 
+                                    <td><h3>DESSERTS</h3></td> 
+                                </tr>
+                                <tr>    
+                                    <td>" . $dessert . "<br></td>  
                                 </tr>
                                 <tr>
-                                    <td>Contact</td>
-                                    <td>" . $contact . "</td> 
+                                    <td><h3>SIDES</h3></td> 
+                                </tr>
+                                <tr>    
+                                    <td>" . $side . "<br></td>  
                                 </tr>
                                 <tr>
-                                    <td>Branch</td>
-                                    <td>" . $branch . "</td> 
+                                    <td><h3>DRINK PACKAGE</h3></td> 
+                                </tr>
+                                <tr>    
+                                    <td>" . $drinks . "<br></td>  
                                 </tr>
                                 <tr>
-                                    <td>No. of Pax</td> 
-                                    <td>" . $pax . "</td>
+                                    <td><h3>RENT A PICNIC BASKET</h3></td> 
+                                </tr>
+                                <tr>    
+                                    <td>" . $basket . "<br></td>  
                                 </tr>
                                 <tr>
-                                    <td>Date</td>
-                                    <td>" . $date . "</td>
+                                    <td><h3>WINE</h3></td> 
+                                </tr>
+                                <tr>    
+                                    <td>" . $wine . "<br></td>  
+                                </tr> 
+                                <tr> 
+                                    <td colspan='2'>" . $line . "</td>
                                 </tr>
                                 <tr>
-                                    <td>Time</td>
-                                    <td>" . $time . "</td>
+                                    <td align='right'><h2>TOTAL</h2></td>
+                                    <td><h2><b>" . $total . "</b></h2></td> 
                                 </tr>
-                                <tr>
-                                    <td>Additional Info</td>
-                                    <td>" . $info . "</td>
-                                </tr>                                                                                                            
                                 <tr></tr><tr></tr><tr></tr>
                                 <tr>
                                     <td></td>
                                     <td align='right'><br><br><br>                                    
-                                    <a href='javascript:history.go(-1)'><input type='button' value='CHANGE RESERVATION DETAILS'></a>
-                                    <a href='confirm.php'><input type='button' value='CONFIRM'></a>
+                                    <a href='pages/branches.php?name=SBG#picnictext'><input type='button' value=' CANCEL '></a>
+                                    <a href='contact.php'><input type='button' value='CONFIRM'></a>
                               </table>                                                            
-                              ";
-                                                      
-        }       
-       
-                       
-    }
+                              ";                                                                                                     
 ?>    
 <div id="fadeConfirm" style="display:block">
             <?php echo $message;?>
 </div>
-
-<!--
-<form id="SBG" action="../verify.php" method="post">
-    <table>
-        <tr>
-            <td>Name*<td>
-            <td colspan="2">Email*</td>
-            <td>Contact Number*</td>
-        </tr>
-        <tr>
-            <td colspan="2"><input type="text" size="60" value="" name="name" maxlength="60" required></td>
-            <td colspan="2"><input type="email" size="60" value="" name="email" maxlength="60" required></td>
-            <td><input type="text" size="35" value="" name="contact" maxlength="8" required onkeypress='validate(event)'></td>            
-        </tr>
-        <tr>
-            <td>Which branch*</td>
-            <td>Pax*</td>
-            <td>Date*</td>
-            <td>Time*</td>
-            <td rowspan="2"><li>Please allow us 3 working days to get <br />
-                back to you. Reservations are only                  <br />
-                confirmed when there is an email reply.</li>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <select name="branch">
-                  <option value="" disabled="disabled">----------Choose a Branch----------</option>
-                  <option value="SBG">   Singapore Botanical Garden</option>
-                  <option value="NMS"> National Museum of Singapore</option>
-                </select>
-            </td>
-            <td>
-                <select name="pax">
-                  <option value="" disabled="disabled">-</option>  
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                </select>
-            </td>    
-            <td>
-                
-                <input type="date" format="DD/MM/YYYY" min="<?php echo date('Y-m-d', strtotime("+4 days")); ?>" id="date" name='date'></td>            
-                
-            <td><input type="time" value="08:00" step="900" name="time"></td>    
-        </tr>            
-        <tr>
-            <td>Additional Information</td>
-        </tr>
-        <tr>
-            <td colspan="4"><textarea cols="100" rows="3" name="info"></textarea></td>
-            <td><input type="submit" value="Request" style="height: 4.5em; width: 19em; 
-                       background-color:#DD523C;" id="btnstyle"></td>
-        </tr>
-        <tr><td><div id="results"><div></td>
-        </tr>    
-    </table>
-</form>
--->
