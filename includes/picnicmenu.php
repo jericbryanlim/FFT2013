@@ -25,6 +25,10 @@
     $drink4C1 = "4 x Bottled Drinks";
     $drink4C2 = "4 x Canned Drinks, 2 x Mineral Water";
     $drink4C3 = "8 x Mineral Water";
+    
+    $drinkCC1 = "Mineral Water";
+    $drinkCC2 = "Canned Drinks";
+    $drinkCC3 = "Bottled Drinks";
 
     $wine1 = " <b>Sauvignon Blanc</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                <b>+$50 </b> (750ml)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

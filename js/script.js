@@ -1,107 +1,19 @@
-function showDiv(div_number) {
-    /*if(div_number==1){        
-        document.getElementById(1).style.display = 'block';
-        document.getElementById(2).style.display = 'none';
+function showDiv(div_number) {         
+    if(div_number==1){        
+        document.getElementById(1).style.display = 'block';       
         document.getElementById(3).style.display = 'none';
-    }
-    else if(div_number==2){
-        document.getElementById(1).style.display = 'none';
-        document.getElementById(2).style.display = 'block';
-        document.getElementById(3).style.display = 'none';
-    }
-    else if(div_number==3){
-        document.getElementById(1).style.display = 'none';
-        document.getElementById(2).style.display = 'none';
+    }      
+    if(div_number==3){        
+        document.getElementById(1).style.display = 'none';       
         document.getElementById(3).style.display = 'block';
-    }*/  
-    document.getElementById(1).style.display = 'block';
+    }
+    else if(div_number==4){
+        document.getElementById("fadeOverlay").style.display = 'block';              
+    } 
+    else if(div_number==5){
+        document.getElementById("fadeOverlay").style.display = 'none';                        
+    } 
 }
-$(document).ready(function() {
-    $('#PIC2').click(function() {			 
-      $('#PIC2').css({ "position": "relative", "top": "0px", "left": "-50px"}); 
-      $('#PIC4').css({ "position": "relative", "top": "500px", "left": "-50px"});
-      $('#PICcust').css({ "position": "relative", "top": "500px", "left": "-50px"});
-      
-      $('.picnic2').css("background-color","#DD523C");
-      $('.picnic4').css("background-color","#000000");
-      $('.picniccust').css("background-color","#000000");
-      
-      $('.menucol1').css("margin-top", "+5415px");
-      $('.menucol1down').css("margin-top", "+5570px");
-      $('.menucol2').css("margin-top", "+5415px");
-      $('.menucol2down').css("margin-top", "+5570px");
-      $('.menucol3').css("margin-top", "+5415px");
-      $('.menucol3down').css("margin-top", "+5570px");
-      $('.menucol2basket').css("margin-top", "+5670px");
-      $('.two').css("margin-top", "+5850px");
-            
-      for(var i=1;i<=4;i++){
-          $("#sandwich" + i + " option[value='3']").remove();
-          $("#sandwich" + i + " option[value='4']").remove();
-
-          $("#dessert"  + i + " option[value='3']").remove();
-          $("#dessert"  + i + " option[value='4']").remove();
-      
-          $("#side"     + i + " option[value='3']").remove();
-          $("#side"     + i + " option[value='4']").remove();
-      } 
-      for(var i=1;i<=6;i++){
-          $("#wine" + i + " option[value='3']").remove();
-          $("#wine" + i + " option[value='4']").remove();
-      }
-      total = document.getElementById("totaltxt").value = "$42";      
-      total = 42;
-      $('.drinks2').show();
-      $('.drinks4').hide();
-    });	
-    $('#PIC4').click(function() {			 
-      $('#PIC2').css({ "position": "relative", "top": "0px", "left": "-50px"});  
-      $('#PIC4').css({ "position": "relative", "top": "0px", "left": "-50px"});
-      $('#PICcust').css({ "position": "relative", "top": "+500px", "left": "-50px"});
-      
-      $('.picnic2').css("background-color","#000000");
-      $('.picnic4').css("background-color","#DD523C");
-      $('.picniccust').css("background-color","#000000");
-      
-      $('.menucol1').css("margin-top", "+5485px");
-      $('.menucol1down').css("margin-top", "+5640px");
-      $('.menucol2').css("margin-top", "+5485px");
-      $('.menucol2down').css("margin-top", "+5640px");
-      $('.menucol3').css("margin-top", "+5485px");
-      $('.menucol3down').css("margin-top", "+5640px");
-      $('.menucol2basket').css("margin-top", "+5770px");
-      $('.two').css("margin-top", "+5925px");
-            
-      for(var i=0;i<=4;i++){          
-          $("#sandwich" + i ).append("<option value='3'>3</option>");          
-          $("#sandwich" + i ).append("<option value='4'>4</option>"); 
-          
-          $("#dessert"  + i ).append("<option value='3'>3</option>");          
-          $("#dessert"  + i ).append("<option value='4'>4</option>");          
-      
-          $("#side"     + i ).append("<option value='3'>3</option>");          
-          $("#side"     + i ).append("<option value='4'>4</option>");          
-      }  
-      for(var i=1;i<=6;i++){
-          $("#wine"     + i ).append("<option value='3'>3</option>");
-          $("#wine"     + i ).append("<option value='4'>4</option>");
-      }
-      
-      document.getElementById("totaltxt").value = "$84";      
-      total = 84;
-      $('.drinks2').hide();
-      $('.drinks4').show();
-    });	
-    $('#PICcust').click(function() {	
-      $('#PIC2').css({ "position": "relative", "top": "0px", "left": "-50px"});  
-      $('#PIC4').css({ "position": "relative", "top": "0px", "left": "-50px"});
-      $('#PICcust').css({ "position": "relative", "top": "0px", "left": "-50px"});
-      
-      $('.picnic2').css("background-color","#000000");
-      $('.picnic4').css("background-color","#000000");
-      $('.picniccust').css("background-color","#DD523C");
-    });
-});
 $(document).ready(function() {
     
     // Cache selectors for faster performance.
@@ -142,7 +54,6 @@ function validate(evt) {
   }
 }
 function checkEmail() {
-
     var email = document.getElementById('email');
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
@@ -153,7 +64,6 @@ function checkEmail() {
  }
 }
 $(function() {
-
     var $sidebar   = $("#Social"),
         $window    = $(window),
         offset     = $sidebar.offset(),

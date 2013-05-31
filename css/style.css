@@ -545,7 +545,7 @@
         color:#000000; 
         text-transform:none;
 }
-#price{
+#pricesand{
         right:0;
         position:absolute;
         display:block;
@@ -555,6 +555,70 @@
         color:#000000; 
         text-transform:none;
         display:inline;
+        top: -5px;
+}
+#pricedes{
+        right:0;
+        position:absolute;
+        display:block;
+        width:725px;
+        font-family:Stag-Bold;
+        font-size:20px;
+        color:#000000; 
+        text-transform:none;
+        display:inline;
+        top: -5px;
+}
+#priceside{
+        right:0;
+        position:absolute;
+        display:block;
+        width:725px;
+        font-family:Stag-Bold;
+        font-size:20px;
+        color:#000000; 
+        text-transform:none;
+        display:inline;
+        top: -5px;
+}
+#mineral{
+        right:0;
+        position:absolute;
+        display:block;
+        width:725px;
+        font-family:Stag-Bold;
+        font-size:20px;
+        color:#000000; 
+        text-transform:none;
+        display:inline;
+        top: -5px;
+        left: 330px;
+}
+#canned{
+        right:0;
+        position:absolute;
+        display:block;
+        width:725px;
+        font-family:Stag-Bold;
+        font-size:20px;
+        color:#000000; 
+        text-transform:none;
+        display:inline;
+        top: 15px;
+        left: 330px;
+}
+#bottle{
+        right:0;
+        position:absolute;
+        display:block;
+        width:725px;
+        font-family:Stag-Bold;
+        font-size:20px;
+        color:#000000; 
+        text-transform:none;
+        display:inline;
+        top: 35px;
+        left: 330px;
 }
 #PicnicNote{
         left:138px;
@@ -716,6 +780,17 @@
         margin-top:0px;
 }
 .drinks4{        
+        position:absolute;
+        display:block;
+        width:400px;
+        height:100px;
+        font-family:Stag-Book;
+        font-size:13px;
+        color:#000000; 
+        text-transform:none;
+        margin-top:0px;
+}
+.drinkscust{        
         position:absolute;
         display:block;
         width:400px;
