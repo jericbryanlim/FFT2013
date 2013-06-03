@@ -2,5 +2,5 @@
 <div id="hr" class="whatsonhr"><?php echo $line ?>
 </div>
 <div id="Header" class="whatsonslide">
-<img src = "images/WhatsOn.png" width="89%">
+<a href="pages/WhatsOn.php"><img src = "images/WhatsOn.png" width="89%"></a>
 </div>

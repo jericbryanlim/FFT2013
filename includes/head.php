@@ -36,6 +36,7 @@
     
     global $branch;   
     global $message;     
+    global $eventid;
 ?>
 
             

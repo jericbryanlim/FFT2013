@@ -1117,7 +1117,113 @@
         margin-top:4475px;
         background-size: 100% 100%;
 }
-
+#NMS_launch{
+        display:block;
+        width:480px;
+        height:325px;        
+        margin-left:85px;
+        margin-top:120px;
+        background:url('../images/WhatsOn/NMS_launch.jpg') no-repeat;          
+}
+#whatsonheader{    
+    position:absolute;
+    display:block;
+    font-family:Stag-SemiBold;
+    font-size:18px;
+    color:#000000;     
+    left:650px; 
+    top: 220px;    
+}
+#whatsonbody{    
+    position:absolute;
+    display:block;
+    font-family:Stag-Book;
+    font-size:13px;
+    color:#000000;     
+    left:650px; 
+    top: 300px;  
+    width:375px;
+}
+#fields{    
+    position:absolute;
+    display:block;
+    font-family:Stag-Semibold;
+    font-size:13px;
+    color:#000000;     
+    left:650px; 
+    top: 400px;      
+}
+#details{    
+    position:absolute;
+    display:block;
+    font-family:Stag-Book;
+    font-size:13px;
+    color:#000000;     
+    left:750px; 
+    top: 400px;      
+}
+#body{    
+    position:absolute;
+    display:block;
+    font-family:Stag-Book;
+    font-size:13px;
+    color:#000000;     
+    left:138px; 
+    top: 300px;      
+    width:1080px;
+}
+#body img{    
+    position:relative;
+    display:block;    
+    width:1080px;
+}
+#whatsonbranch{
+        position:absolute;
+        display:block;        
+        width:45px;
+        height:45px; 
+        top:250px;
+        left: 1170px;
+}
+.whatson_nms{
+        background:url('../images/WhatsOn/WhatsOn_Logo/nms-whatson.png') no-repeat; 
+}
+#eventbranch{
+        position:absolute;
+        display:block;        
+        width:45px;
+        height:45px; 
+        top:210px;
+        left: 1170px;
+}
+.event_nms{
+        background:url('../images/Events/Events-Logo/nms-event.png') no-repeat; 
+}
+.event_sbg{
+        background:url('../images/Events/Events-Logo/sbg-event.png') no-repeat; 
+}
+.event_ffft{
+        background:url('../images/Events/Events-Logo/ffft-event.png') no-repeat; 
+}
+#when{
+    position:absolute;
+    display:block;
+    font-family:Stag-Book;
+    font-size:16px;
+    color:#000000;     
+    left:138px; 
+    top: 200px;      
+}
+#what{
+    position:absolute;
+    display:block;
+    font-family:Stag-Bold;
+    font-size:25px;
+    color:#000000;     
+    left:138px; 
+    top: 220px; 
+    text-transform:uppercase;
+}
 /* Others */
 #hr {
     position:absolute;
@@ -1291,7 +1397,7 @@ A.slidesjs-next{
     background:url('../images/resto/FFFT.png') no-repeat;
 }
 .whatsonheader{
-    top:1800px;
+    top:1800px;    
 }
 .whatsonhr{
     top:1810px;
@@ -1313,11 +1419,13 @@ A.slidesjs-next{
     left:220px;
 }
 .eventsheader{
-    top:2900px;
-    
+    top:2900px;    
 }
 .eventshr{
     top:2910px;
+}
+.rule{
+    top:175px;
 }
 .eventsbig{
     left:138px;
@@ -1336,21 +1444,23 @@ A.slidesjs-next{
     left:980px;
     top:915px;
 }
-
+.eventsthumbcol5{
+    left:1260px;    
+}
 .eventsbigIMG{
-    background:url('../images/Events/Event1.png') no-repeat;
+    background:url('../images/Events/DineInTheDark.jpg') no-repeat;
 }
 .event2{
-    background:url('../images/Events/Event2.png') no-repeat;
+    background:url('../images/Events/AprilFools.jpg') no-repeat;
 }
 .event3{
-    background:url('../images/Events/Event3.png') no-repeat;
+    background:url('../images/Events/BenJerrys.jpg') no-repeat;
 }
 .event4{
-    background:url('../images/Events/Event4.png') no-repeat;
+    background:url('../images/Events/ChildrenCarnival.jpg') no-repeat;
 }
 .event5{
-    background:url('../images/Events/Event5.png') no-repeat;
+    background:url('../images/Events/FryDay.jpg') no-repeat;
 }
 .SBGIMG1{
     background:url('../images/SBG/SBG1.png') no-repeat;
@@ -1443,7 +1553,6 @@ A.slidesjs-next{
 .picnic{
     margin-top:5620px;
 }        
-
 /* HTML Elements
 ****************************************************************************/
 BODY{
