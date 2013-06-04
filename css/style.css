@@ -317,7 +317,19 @@
         top:50px;
         overflow-y:auto;
 }
-.SBGbranch{
+#NMSMenu{
+        position:absolute;
+        display:block;
+        width:580px;
+        height:600px;
+        left: 300px;
+        top:50px;
+        overflow-y:auto;
+}
+#NMSMenu img{
+        width:98%;
+}
+.menubranch{
         font-family:Stag-Bold;
         font-size:25px;    
 }
@@ -326,10 +338,22 @@
         font-size:16px;         
 }
 .links{        
-        font-family:Stag-Bold;
+        font-family:Stag-Book;
         font-size:13px;         
 }
-#fadeOverlay
+#SBG_MenuOverlay
+{
+        opacity:0.95;
+        display:none;
+        position:fixed;
+        left:200px;
+        top:0;
+        width:70%;
+        height:100%;
+        z-index:9999;
+        background:#111;
+}
+#NMS_MenuOverlay
 {
         opacity:0.95;
         display:none;
@@ -375,11 +399,15 @@
 }
 .recommendation{
         font-family:Stag-Book;
-        font-size:12px;     
-        margin-top: 175px;
+        font-size:12px;             
         width:60%;
 }
-
+.SBG_recommendation{
+    margin-top: 175px;
+}
+.NMS_recommendation{
+    margin-top: 145px;
+}
 #MenuImg{
         position:absolute;
         display:block;

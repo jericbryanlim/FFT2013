@@ -62,7 +62,7 @@
         <br />
         (Last orders at 9pm)
     </div>
-    <div id='menuNMS'>
+    <div id='menuNMS' onclick="showDiv(3);">
     <div id="MenuImg"></div>
     <div id="Menu"><u>View Menu</u></div></div>
     <div id="ReadMoreImg"></div>

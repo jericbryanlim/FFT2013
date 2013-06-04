@@ -1,17 +1,18 @@
 function showDiv(div_number) {         
     if(div_number==1){        
-        document.getElementById(1).style.display = 'block';       
-        document.getElementById(3).style.display = 'none';
+        //picnic
+        document.getElementById(1).style.display = 'block';              
     }      
-    if(div_number==3){        
-        document.getElementById(1).style.display = 'none';       
-        document.getElementById(3).style.display = 'block';
-    }
+    //menu overlays
+    else if(div_number==3){        
+        document.getElementById("NMS_MenuOverlay").style.display = 'block';              
+    } 
     else if(div_number==4){
-        document.getElementById("fadeOverlay").style.display = 'block';              
+        document.getElementById("SBG_MenuOverlay").style.display = 'block';              
     } 
     else if(div_number==5){
-        document.getElementById("fadeOverlay").style.display = 'none';                        
+        document.getElementById("SBG_MenuOverlay").style.display = 'none';  
+        document.getElementById("NMS_MenuOverlay").style.display = 'none'; 
     } 
 }
 $(document).ready(function() {
