@@ -86,8 +86,9 @@
         T: +65 6338 9887
         <br />
         F: +65 6338 1080 
-        
+        -->
     </div>
+    <!--
     <div id="RestoHours">Opening Hours</div>
     <div id="RestoHoursDetails">
         Mon - Sat
@@ -102,11 +103,14 @@
         <br />
         (Last orders at 7.30pm)
     </div>
+    -->
+    <div id='menuNMS' onclick="showDiv(2);">
     <div id="MenuImg"></div>
-    <div id="Menu"><u>View Menu</u></div>
+    <div id="Menu"><u>View Menu</u></div></div>
+    <!--
     <div id="ReadMoreImg"></div>
         <div id="ReadMore"><a href="pages/branches.php?name=FFFT"><u>Read More</u></a></div>
-        -->
+    -->    
     </div>
         
 </div>

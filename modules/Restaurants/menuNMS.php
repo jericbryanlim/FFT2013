@@ -8,7 +8,7 @@
                             <a href="#mains">Mains</a><br><br>
                             <a href='#salads'>Salads</a><br><br>
                             <a href='#ffts'>Food for Tots Special</a><br><br>
-                            <a href='#snacks'>Sides and Snacks</a><br><br>
+                            <a href='#sides_NMS'>Sides and Snacks</a><br><br>
                             <a href='#sweets_NMS'>Sweets</a><br><br>
                             <a href="#beverages">Beverages</a>                            
                      </div>                     
@@ -25,7 +25,7 @@
         <img src="images/menu/NMS/mains.png"        id='mains'>
         <img src="images/menu/NMS/salads.png"       id='salads'>
         <img src="images/menu/NMS/foodfortots.png"  id='ffts'>
-        <img src="images/menu/NMS/sides.png"        id='snacks'>
+        <img src="images/menu/NMS/sides.png"        id='sides_NMS'>
         <img src="images/menu/NMS/sweets.png"       id='sweets_NMS'>
         <img src="images/menu/NMS/beverages.png"    id='beverages'>
     </div>  

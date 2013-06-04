@@ -4,6 +4,10 @@ function showDiv(div_number) {
         document.getElementById(1).style.display = 'block';              
     }      
     //menu overlays
+    else if(div_number==2){        
+        document.getElementById("FFFT_MenuOverlay").style.display = 'block';              
+        document.getElementById("FFFT_opaqueOverlay").style.display = 'block';
+    } 
     else if(div_number==3){        
         document.getElementById("NMS_MenuOverlay").style.display = 'block';              
         document.getElementById("NMS_opaqueOverlay").style.display = 'block';
@@ -13,10 +17,12 @@ function showDiv(div_number) {
         document.getElementById("SBG_opaqueOverlay").style.display = 'block';
     } 
     else if(div_number==5){
-        document.getElementById("SBG_MenuOverlay").style.display = 'none';  
-        document.getElementById("NMS_MenuOverlay").style.display = 'none'; 
-        document.getElementById("NMS_opaqueOverlay").style.display = 'none';
-        document.getElementById("SBG_opaqueOverlay").style.display = 'none';
+        document.getElementById("SBG_MenuOverlay" ).style.display = 'none';  
+        document.getElementById("NMS_MenuOverlay" ).style.display = 'none'; 
+        document.getElementById("FFFT_MenuOverlay").style.display = 'none';              
+        document.getElementById("SBG_opaqueOverlay" ).style.display = 'none';
+        document.getElementById("NMS_opaqueOverlay" ).style.display = 'none';        
+        document.getElementById("FFFT_opaqueOverlay").style.display = 'none';
     } 
 }
 $(document).ready(function() {

@@ -7,6 +7,7 @@ include_once('modules/TopBanner/TopBanner.php');
 include_once('modules/Restaurants/Restaurants.php');
 include_once('modules/Restaurants/menuSBG.php');
 include_once('modules/Restaurants/menuNMS.php');
+include_once('modules/Restaurants/menuFFFT.php');
 include_once('modules/WhatsOnSlideShow/WhatsOnSlideShow.php');
 include_once('modules/Causes/Causes.php');
 include_once('modules/EventsScroll/EventsScroll.php');

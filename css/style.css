@@ -321,6 +321,12 @@
         width:1050px;
         height:600px;                        
 }
+#FFFTMenu{
+        position:absolute;
+        display:block;
+        width:1050px;
+        height:600px;                        
+}
 .menubranch{
         font-family:Stag-Bold;
         font-size:25px;    
@@ -332,6 +338,20 @@
 .links{        
         font-family:Stag-Book;
         font-size:13px;         
+}
+#SBG_opaqueOverlay
+{
+        opacity:1.00;
+        display:none;
+        position:fixed;
+        left:420px;
+        top:40px;
+        width:715px;
+        height:90%;
+        z-index:9999;
+        background:#000;
+        overflow-y:scroll;
+        overflow-x:hidden;
 }
 #NMS_opaqueOverlay
 {
@@ -347,7 +367,7 @@
         overflow-y:scroll;
         overflow-x:hidden;
 }
-#SBG_opaqueOverlay
+#FFFT_opaqueOverlay
 {
         opacity:1.00;
         display:none;
@@ -374,6 +394,18 @@
         background:#111;
 }
 #NMS_MenuOverlay
+{
+        opacity:0.95;
+        display:none;
+        position:fixed;
+        left:0px;
+        top:0;
+        width:100%;
+        height:100%;
+        z-index:9999;
+        background:#111;
+}
+#FFFT_MenuOverlay
 {
         opacity:0.95;
         display:none;
@@ -427,6 +459,9 @@
 }
 .NMS_recommendation{
     margin-top: 145px;
+}
+.FFFT_recommendation{
+    margin-top: 380px;
 }
 #MenuImg{
         position:absolute;
