@@ -6,13 +6,17 @@ function showDiv(div_number) {
     //menu overlays
     else if(div_number==3){        
         document.getElementById("NMS_MenuOverlay").style.display = 'block';              
+        document.getElementById("NMS_opaqueOverlay").style.display = 'block';
     } 
     else if(div_number==4){
         document.getElementById("SBG_MenuOverlay").style.display = 'block';              
+        document.getElementById("SBG_opaqueOverlay").style.display = 'block';
     } 
     else if(div_number==5){
         document.getElementById("SBG_MenuOverlay").style.display = 'none';  
         document.getElementById("NMS_MenuOverlay").style.display = 'none'; 
+        document.getElementById("NMS_opaqueOverlay").style.display = 'none';
+        document.getElementById("SBG_opaqueOverlay").style.display = 'none';
     } 
 }
 $(document).ready(function() {
